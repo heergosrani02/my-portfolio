@@ -4,8 +4,20 @@ import { links } from "./../../data.js";
 import { CiMenuFries } from "react-icons/ci";
 import { IoSunny, IoMoon } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
+import { useState } from "react";
 
 function Navbar() {
+  const [isOpen, setOpen] = useState(true);
+  const [theme, setTheme] = useState(true);
+
+  const handleMenu = () => {
+    setOpen(!isOpen); 
+  };
+
+  const toggleTheme = () => {
+    setTheme(!theme);
+  }
+
   return (
     <>
       <header>
@@ -16,24 +28,33 @@ function Navbar() {
             </div>
 
             <div className={navbarCss.toggleBtn}>
-              <IoMoon />
+              {theme ? (<IoMoon onClick={toggleTheme} />) : (<IoSunny color={"white"} onClick={toggleTheme}/>)}
             </div>
+          </div>
 
+          {isOpen ? (
             <div className={navbarCss.navLinks}>
-              <div className={navbarCss.menuBtn}>
-                <CiMenuFries size={22} />
-              </div>
+              <CiMenuFries
+                size={22}
+                onClick={handleMenu}
+                className={navbarCss.menuBtn}
+              />
             </div>
-          </div>
-          
-          <div className={navbarCss.navContainer}>
-            <RxCross2 size={32} className={navbarCss.cross}/>
-            <ul>
-              {links.map((name, index) => (
-                <li key={index}>{name}</li>
-              ))}
-            </ul>
-          </div>
+          ) : (
+            <div className={navbarCss.navContainer}>
+              <RxCross2
+                size={32}
+                onClick={handleMenu}
+                className={navbarCss.cross}
+              />
+
+              <ul>
+                {links.map((name, index) => (
+                  <li key={index}>{name}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </nav>
       </header>
     </>

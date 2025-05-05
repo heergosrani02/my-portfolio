@@ -11,12 +11,16 @@
 }
 
 .toggleBtn{
-    position: relative;
-    left: 550px;
+    position: absolute;
+    right: 80px;
+    cursor: pointer;
 }
 
-.navLinks{
-    display: flex;
+.menuBtn{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    cursor: pointer;
 }
 
 .navContainer{
@@ -26,13 +30,15 @@
     position: absolute;
     top: 0;
     right: 0;
-    display: none;
 }
 
 .cross{
+    background: none;
+    border: none;
     position: relative;
     left: 438px;
     top: 35px;
+    cursor: pointer;
 }
 
 .navContainer ul{
