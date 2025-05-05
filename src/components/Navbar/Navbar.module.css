@@ -1,0 +1,6 @@
+.navLogo{
+    display: flex;
+    margin: 20px 60px;
+    gap: 40px;
+    font-size: 25px;
+}
