@@ -1,21 +1,23 @@
 import navbarCss from "./Navbar.module.css";
 import { links } from "./../../data.js";
 
-import { CiMenuFries } from "react-icons/ci";
-import { IoSunny, IoMoon } from "react-icons/io5";
+import { CgMenuRightAlt } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
+
 import { useState } from "react";
+import { motion } from "motion/react"
+import { stagger } from "motion";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(true);
-  const [theme, setTheme] = useState(true);
 
   const handleMenu = () => {
     setOpen(!isOpen); 
   };
 
-  const toggleTheme = () => {
-    setTheme(!theme);
+  const transition = {
+    duration: 0.8,
+    delay: 0.5,
   }
 
   return (
@@ -23,23 +25,28 @@ function Navbar() {
       <header>
         <nav>
           <div className={navbarCss.nav}>
-            <div className={navbarCss.navLogo}>
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={transition}
+              className={navbarCss.navLogo}
+            >
               <p>Heer Gosrani.</p>
-            </div>
-
-            <div className={navbarCss.toggleBtn}>
-              {theme ? (<IoMoon onClick={toggleTheme} />) : (<IoSunny color={"white"} onClick={toggleTheme}/>)}
-            </div>
+            </motion.div>
           </div>
 
           {isOpen ? (
-            <div className={navbarCss.navLinks}>
-              <CiMenuFries
-                size={22}
+            <motion.div
+              initial={{ opacity: 0, y: -30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={transition}
+              className={navbarCss.navLinks}
+            >
+              <CgMenuRightAlt
+                size={32}
                 onClick={handleMenu}
-                className={navbarCss.menuBtn}
               />
-            </div>
+            </motion.div>
           ) : (
             <div className={navbarCss.navContainer}>
               <RxCross2
