@@ -1,0 +1,24 @@
+.container{
+    width: 1350px;
+    height: 600px;
+    margin: 10px 35px;
+    border-radius: 10px;
+} 
+
+.intro{
+    font-size: 40px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+}
+
+.myRole{
+    font-size: 40px;
+    position: relative;
+    top: 170px;
+    left: 30px;
+}
+
+span{
+    color: #F5EFEB;
+}
