@@ -1,14 +1,22 @@
 .nav{
-    margin: 10px;
     padding: 25px;
+    box-shadow: 0px 2px 40px -15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navLogo{
-    font-size: 25px;
-    padding-left: 20px;
+    font-size: 28px;
+    padding-left: 30px;
+}
+
+.socialMedia{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 30px;
+    right: 120px;
 }
 
 .toggleBtn{
@@ -17,9 +25,9 @@
     cursor: pointer;
 }
 
-.navLinks{
+.navMenu{
     position: absolute;
-    top: 40px;
+    top: 26px;
     right: 30px;
     cursor: pointer;
 }
@@ -37,7 +45,7 @@
 .cross{
     position: relative;
     left: 390px;
-    top: 40px;
+    top: 26px;
     cursor: pointer;
 }
 

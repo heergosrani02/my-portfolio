@@ -3,6 +3,7 @@ import { links } from "./../../data.js";
 
 import { CgMenuRightAlt } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
+import { FaGithub, FaXTwitter, FaInstagram  } from "react-icons/fa6";
 
 import { useState } from "react";
 
@@ -23,8 +24,20 @@ function Navbar() {
             </div>
           </div>
 
+          <div className={navbarCss.socialMedia}>
+            <div className={navbarCss.github}>
+              <FaGithub size={25} />
+            </div>
+            <div className={navbarCss.twitter}>
+              <FaXTwitter size={25}/>
+            </div>
+            <div className={navbarCss.instagram}>
+              <FaInstagram size={25}/>
+            </div>
+          </div>
+
           {isOpen ? (
-            <div className={navbarCss.navLinks}>
+            <div className={navbarCss.navMenu}>
               <CgMenuRightAlt size={32} onClick={handleMenu} />
             </div>
           ) : (
