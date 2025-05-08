@@ -67,3 +67,57 @@ span{
     position: relative;
     top: 4px;
 }
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 100%;
+        margin: 0px;
+    } 
+
+    .intro{
+        width: 300px;
+        font-size: 25px;
+        position: relative;
+        top: 50px;
+    }
+
+    .intro1{
+        width: 300px;
+        font-size: 25px;
+        position: relative;
+        top: 70px;
+    }
+
+    .myRole{
+        width: 320px;
+        font-size: 25px;
+        position: relative;
+        top: 90px;
+    }
+
+    .heroImg img{
+        width: 90%;
+        height: 420px;
+        position: absolute;
+        top: 280px;
+        right: 70px;
+    }
+
+    .glass{
+        width: 135px;
+        padding: 12px;
+        font-size: 10px;
+        position: relative;
+        top: 230px;
+        left: 190px;
+    }
+
+    .downloadCv{
+        width: 100px;
+        padding: 5px;
+        font-size: 10px;
+        position: relative;
+        top: 240px;
+        left: 250px;
+    }
+}

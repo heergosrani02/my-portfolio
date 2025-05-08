@@ -16,7 +16,7 @@
     gap: 20px;
     position: absolute;
     top: 30px;
-    right: 120px;
+    right: 80px;
 }
 
 .toggleBtn{
@@ -60,4 +60,34 @@
     padding: 10px;
     font-size: 35px;
     color: #2F4156;
+}
+
+@media screen and (max-width: 600px) {
+    .navLogo{
+        font-size: 25px;
+        padding-left: 10px;
+    }
+
+    .socialMedia{
+        gap: 10px;
+        position: absolute;
+        right: 75px;
+    }
+
+    .navContainer{
+        width: 355px;
+    }
+
+    .cross{
+        position: relative;
+        left: 290px;
+        top: 26px;
+        cursor: pointer;
+    }
+
+    .navContainer ul li{
+        padding: 10px;
+        font-size: 32px;
+        color: #2F4156;
+    }
 }
