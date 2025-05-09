@@ -41,13 +41,13 @@ export const techStack = [
     },
 
     {
-        name: "NodeJs",
-        image: nodejs,
-    },
-
-    {
         name: "Redux",
         image: redux,
+    },
+    
+    {
+        name: "NodeJs",
+        image: nodejs,
     },
 
     {
