@@ -4,6 +4,8 @@ import { HiDownload } from "react-icons/hi"
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
+import { techStack } from "../../data.js";
+
 function AboutSection(){
     return (
       <>
@@ -61,6 +63,25 @@ function AboutSection(){
             </div>
           </div>
         </div>
+
+        <div className={aboutCss.techstack}>
+          <div className={aboutCss.back}>
+            <p>My Specilalites</p>
+          </div>
+          <div className={aboutCss.front}>
+            <p>My Techstack</p>
+          </div>
+        </div>
+
+        <div className={aboutCss.tech}>
+          {techStack.map((tech, index) => (
+            <div key={index} className={aboutCss.stack}>
+              <img src={tech.image} alt={tech.name} />
+              <p>{tech.name}</p>
+            </div>
+          ))}
+        </div>
+      
       </>
     );
 }
