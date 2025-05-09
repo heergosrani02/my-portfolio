@@ -8,8 +8,21 @@
     list-style: none;
 }
 
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5EFEB; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #2F4156;
+}
+
 :root{
     --bg-color: #C8D9E6;
+    --secondary-color: #F5EFEB;
     --text-color: #2F4156;
 }
 
