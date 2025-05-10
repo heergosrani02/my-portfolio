@@ -135,8 +135,8 @@
 
 @media screen and (max-width: 375px) {
     .container {
-        width: 335px;
-        height: 54rem;
+        width: 345px;
+        height: 52rem;
         position: relative;
         top: 100px;
         left: 15px;

@@ -10,6 +10,9 @@ import git from "./assets/img/git.png"
 import github from "./assets/img/github.png"
 import postman from "./assets/img/postman.png"
 import motion from "./assets/img/motion.png"
+import accio from "./assets/img/acciojob.png"
+import czmg from "./assets/img/czmg.png"
+import pu from "./assets/img/pu.png"
 
 export const links = [
     "Home",
@@ -79,4 +82,36 @@ export const techStack = [
         name: "Motion",
         image: motion,
     },
+]
+
+
+export const education = [
+  {
+    id: 1,
+    image: czmg,
+    date: "2020 - 2023",
+    collegeName: "Smt Chandramaniben Zaverchand Meghji Gosrani BCA College",
+    courseName: "B.C.A - Computer Applications",
+    cityName: "Jamnagar, India",
+  },
+
+  {
+    id: 2,
+    image: pu,
+    date: "2023 - 2025",
+    collegeName: "Parul University",
+    courseName: "M.Sc - IT - Big Data Analytics",
+    cityName: "Vadodara, India",
+  },
+];
+
+export const experience = [
+    {
+        id: 1,
+        image: accio,
+        date: "Oct 2024 - Apr 2025",
+        companyName: "AccioJob Pvt. Ltd.",
+        role: "Software Developer Trainee",
+        cityName: "Vadodara, India",
+    }
 ]
