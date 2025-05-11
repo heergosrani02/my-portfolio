@@ -17,9 +17,11 @@ function ResumeSection() {
           </div>
 
           <div className={resumeCss.title}>
-            <IoSchool size={43} />
+            <IoSchool size={window.innerWidth > 600 ? 43 : 30} />
             <p>Education</p>
           </div>
+
+          <div className={resumeCss.border}></div>
 
           <div className={resumeCss.education}>
             {education.map((edu) => (
@@ -36,9 +38,11 @@ function ResumeSection() {
           </div>
 
           <div className={resumeCss.title}>
-            <MdWork size={43} />
+            <MdWork size={window.innerWidth > 600 ? 43 : 30} />
             <p>Experience</p>
           </div>
+
+          <div className={resumeCss.border}></div>
 
           <div className={resumeCss.experience}>
             {experience.map((edu) => (

@@ -57,6 +57,7 @@
     border-radius: 5px;
     color: #F5EFEB;
     background: #2f4156;
+    border: none;
     position: relative;
     top: 30px;
     left: 40px;
@@ -135,11 +136,11 @@
 
 @media screen and (max-width: 375px) {
     .container {
-        width: 345px;
+        width: 340px;
         height: 52rem;
         position: relative;
         top: 100px;
-        left: 15px;
+        left: 12px;
     }
 
     .backWord {

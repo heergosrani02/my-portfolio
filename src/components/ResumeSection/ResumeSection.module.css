@@ -25,12 +25,18 @@
     left: 235px;
 }
 
+.border{
+    width: 70%;
+    border-bottom: 1px solid #2f4156;
+    position: relative;
+    left: 235px;
+}
+
 .details{
     width: 70%;
     margin-left: 40px;
     padding-bottom: 20px;
     padding-top: 30px;
-    border-top: 1px solid #2f4156;
     border-bottom: 1px solid #2f4156;
     display: flex;
 }
@@ -43,6 +49,7 @@
     background: #F5EFEB;
     border-radius: 5px;
 }
+
 .education, .experience{
     display: flex;
     flex-direction: column;
@@ -72,4 +79,82 @@
 
 .inner p:nth-child(4){
     font-size: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .backWord {
+    font-size: 60px;
+    padding-top: 40px;
+}
+
+.frontWord {
+    font-size: 25px;
+    position: relative;
+    top: 15px;
+}
+
+.title{
+    width: 50%;
+    margin-top: 55px;
+    font-size: 25px;
+    display: flex;
+    gap: 9px;
+    position: relative;
+    left: 25px;
+}
+
+.border{
+    width: 90%;
+    border-bottom: 1px solid #2f4156;
+    position: relative;
+    left: 25px;
+}
+
+.details{
+    width: 90%;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.details img {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 20px;
+    background: #F5EFEB;
+    border-radius: 5px;
+}
+
+.education, .experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 4px;
+}
+
+.inner p:nth-child(1){
+    font-size: 13px;
+}
+
+.inner p:nth-child(2){
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.inner p:nth-child(3){
+    font-size: 13px;
+}
+
+.inner p:nth-child(4){
+    font-size: 13px;
+}
 }

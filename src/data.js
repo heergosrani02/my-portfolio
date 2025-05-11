@@ -90,7 +90,7 @@ export const education = [
     id: 1,
     image: czmg,
     date: "2020 - 2023",
-    collegeName: "Smt Chandramaniben Zaverchand Meghji Gosrani BCA College",
+    collegeName: "Smt CZMG BCA College",
     courseName: "B.C.A - Computer Applications",
     cityName: "Jamnagar, India",
   },
