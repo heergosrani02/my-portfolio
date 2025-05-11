@@ -1,0 +1,103 @@
+.backWord {
+    font-size: 100px;
+    padding-top: 30px;
+    color: #2f415612;
+    text-align: center;
+}
+
+.frontWord {
+    font-size: 60px;
+    color: #2f4156;
+    position: relative;
+    top: -90px;
+    text-align: center;
+}
+
+.contactMe{
+    display: flex;
+    gap: 30px;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.email, .linkedin, .location{
+    width: 600px;
+    height: 210px;
+    margin-left: 70px;
+    font-size: 25px;
+    background: #F5EFEB;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.contactForm{
+    width: 648px;
+    height: 43rem;
+    background: #F5EFEB;
+    border-radius: 10px;
+}
+
+.contactForm p{
+    font-size: 40px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.contactForm form{
+   display: flex;
+   flex-direction: column;
+}
+
+.contactForm label{
+    font-size: 25px;
+    margin: 5px 25px;
+    padding: 5px;
+}
+
+.contactForm input{
+    width: 550px;
+    height: 30px;
+    padding: 5px 10px;
+    margin: 5px 30px;
+    background: none;
+    border: 1px solid #2f4156;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 15px;
+}
+
+.contactForm textarea{
+    width: 550px;
+    height: 120px;
+    margin: 5px 30px;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #2f4156;
+    resize: none;
+}
+
+.messageBtn{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin: 20px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #F5EFEB;
+    background: #2f4156;
+    border: none;
+    cursor: pointer;
+}
