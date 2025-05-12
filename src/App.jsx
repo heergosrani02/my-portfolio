@@ -5,6 +5,7 @@ import AboutSection from './components/AboutSection/AboutSection.jsx'
 import ResumeSection from './components/ResumeSection/ResumeSection.jsx'
 import ProjectSection from './components/ProjectSection/ProjectSection.jsx'
 import ContactSection from './components/ContactSection/ContactSection.jsx'
+import Footer from "./components/Footer/Footer.jsx"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <ResumeSection />
       <ProjectSection />
       <ContactSection />
+      <Footer />
     </>
   )
 }

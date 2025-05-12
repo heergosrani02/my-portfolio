@@ -19,19 +19,19 @@ function ContactSection() {
             <div className={contactCss.contacts}>
               <div className={contactCss.email}>
                 <IoMail size={30} />
-                <p>Email :</p>
+                <p>Email Us</p>
                 <p>gosraniheer@gmail.com</p>
               </div>
 
               <div className={contactCss.linkedin}>
                 <FaLinkedin size={30} />
-                <p>Profile :</p>
+                <p>My Profile</p>
                 <p>Heer Gosrani</p>
               </div>
 
               <div className={contactCss.location}>
                 <IoLocation size={30} />
-                <p>Location :</p>
+                <p>My Location</p>
                 <p>Gujarat, India</p>
               </div>
             </div>
@@ -39,16 +39,12 @@ function ContactSection() {
             <div className={contactCss.contactForm}>
                 <p>Fill The Form</p>
                 <form>
-                    <label htmlFor="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Enter Your Name" />
 
-                    <label htmlFor="email">Email</label>
                     <input type="text" id="email" placeholder="Enter Your Email" />
 
-                    <label htmlFor="phoneNumber">Phone Number</label>
                     <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number" />
 
-                    <label htmlFor="message">Message</label>
                     <textarea type="text" id="message" name="message" placeholder="Enter Message" />
                     
                     <button className={contactCss.messageBtn}>Send Message <FaArrowUp size={20} /></button>

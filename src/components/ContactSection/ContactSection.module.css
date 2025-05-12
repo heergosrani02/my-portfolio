@@ -26,7 +26,7 @@
 
 .email, .linkedin, .location{
     width: 600px;
-    height: 210px;
+    height: 189px;
     margin-left: 70px;
     font-size: 25px;
     background: #F5EFEB;
@@ -40,7 +40,7 @@
 
 .contactForm{
     width: 648px;
-    height: 43rem;
+    height: 39rem;
     background: #F5EFEB;
     border-radius: 10px;
 }
@@ -49,6 +49,7 @@
     font-size: 40px;
     margin: 20px;
     padding: 10px;
+    text-align: center;
 }
 
 .contactForm form{
@@ -66,9 +67,15 @@
     width: 550px;
     height: 30px;
     padding: 5px 10px;
-    margin: 5px 30px;
+    margin: 20px 30px;
     background: none;
-    border: 1px solid #2f4156;
+    border: solid #2f4156;
+    border-width: 0 0 1px 0;
+}
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input:focus, textarea:focus{
@@ -82,11 +89,12 @@ input::placeholder, textarea::placeholder{
 .contactForm textarea{
     width: 550px;
     height: 120px;
-    margin: 5px 30px;
+    margin: 20px 30px;
     padding: 5px 10px;
     background: none;
-    border: 1px solid #2f4156;
     resize: none;
+    border: solid #2f4156;
+    border-width: 0 0 1px 0;
 }
 
 .messageBtn{
