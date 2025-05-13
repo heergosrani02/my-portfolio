@@ -30,20 +30,16 @@ function Footer() {
             </div>
           </div>
         </div>
+      </div>
 
-        <div className={footerCss.rightsReserved}>
-            <p>© 2025 Heer Gosrani. All rights reserved.</p>
-        </div>
+      <div className={footerCss.rightsReserved}>
+        <p>© 2025 Heer Gosrani. All rights reserved.</p>
+      </div>
 
-        <div className={footerCss.conditions}>
-            <div className={footerCss.privacyPolicy}>
-                Privacy Policy
-            </div>
+      <div className={footerCss.conditions}>
+        <div className={footerCss.privacyPolicy}>Privacy Policy</div>
 
-            <div className={footerCss.terms}>
-                Terms & Conditions
-            </div>
-        </div>
+        <div className={footerCss.terms}>Terms & Conditions</div>
       </div>
     </>
   );

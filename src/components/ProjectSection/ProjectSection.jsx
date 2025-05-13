@@ -25,8 +25,8 @@ function ProjectSection() {
                   <p>{project.description}</p>
 
                 <div className={projectCss.btn}>
-                  <button className={projectCss.btnGit}>Github <FaGithub size={20}/></button>
-                  <button className={projectCss.btnCheck}>Check Live <FaArrowUp size={20} /></button>
+                  <button className={projectCss.btnGit}>Github <FaGithub size={window.innerWidth > 600 ? 20 : 16}/></button>
+                  <button className={projectCss.btnCheck}>Check Live <FaArrowUp size={window.innerWidth > 600 ? 20 : 16} /></button>
                 </div>
                 </div>
               </div>

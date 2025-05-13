@@ -1,3 +1,7 @@
+.container {
+    margin-top: 20px;
+}
+
 .backWord {
     font-size: 100px;
     padding-top: 30px;
@@ -13,18 +17,21 @@
     text-align: center;
 }
 
-.contactMe{
+.contactMe {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
-.contacts{
+.contacts {
     display: flex;
     flex-direction: column;
     gap: 29px;
 }
 
-.email, .linkedin, .location{
+.email,
+.linkedin,
+.location {
     width: 600px;
     height: 189px;
     margin-left: 70px;
@@ -38,32 +45,26 @@
     gap: 5px;
 }
 
-.contactForm{
+.contactForm {
     width: 648px;
     height: 39rem;
     background: #F5EFEB;
     border-radius: 10px;
 }
 
-.contactForm p{
+.contactForm p {
     font-size: 40px;
     margin: 20px;
     padding: 10px;
     text-align: center;
 }
 
-.contactForm form{
-   display: flex;
-   flex-direction: column;
+.contactForm form {
+    display: flex;
+    flex-direction: column;
 }
 
-.contactForm label{
-    font-size: 25px;
-    margin: 5px 25px;
-    padding: 5px;
-}
-
-.contactForm input{
+.contactForm input {
     width: 550px;
     height: 30px;
     padding: 5px 10px;
@@ -74,19 +75,21 @@
 }
 
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
     outline: none;
 }
 
-input::placeholder, textarea::placeholder{
+input::placeholder,
+textarea::placeholder {
     font-size: 15px;
 }
 
-.contactForm textarea{
+.contactForm textarea {
     width: 550px;
     height: 120px;
     margin: 20px 30px;
@@ -97,7 +100,7 @@ input::placeholder, textarea::placeholder{
     border-width: 0 0 1px 0;
 }
 
-.messageBtn{
+.messageBtn {
     width: 200px;
     height: 50px;
     font-size: 20px;
@@ -109,3 +112,125 @@ input::placeholder, textarea::placeholder{
     border: none;
     cursor: pointer;
 }
+
+
+@media screen and (min-width: 360px) and (max-width: 412px) {
+    .backWord {
+        font-size: 45px;
+        padding-top: 60px;
+    }
+
+    .frontWord {
+        font-size: 25px;
+        position: relative;
+        top: -40px;
+    }
+
+    .contactMe {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .contacts {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    .email,
+    .linkedin,
+    .location {
+        width: 95%;
+        height: 89px;
+        margin-left: 20px;
+        font-size: 17px;
+    }
+
+    .contactForm {
+        width: 90%;
+        height: 38rem;
+        margin-left: 20px;
+    }
+
+    .contactForm p {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .contactForm input {
+        width: 77%;
+    }
+
+    .contactForm textarea {
+        width: 77%;
+    }
+
+    .messageBtn {
+        width: 160px;
+        height: 50px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 512px){
+    .backWord {
+        font-size: 45px;
+        padding-top: 60px;
+    }
+
+    .frontWord {
+        font-size: 25px;
+        position: relative;
+        top: -40px;
+    }
+
+    .contactMe {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .contacts {
+        width: 98%;
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+
+    .email,
+    .linkedin,
+    .location {
+        width: 97%;
+        height: 95px;
+        margin-left: 20px;
+        font-size: 17px;
+    }
+
+    .contactForm {
+        width: 97%;
+        height: 38rem;
+        margin-left: 20px;
+    }
+
+    .contactForm p {
+        font-size: 25px;
+        margin: 20px;
+    }
+
+    .contactForm input {
+        width: 77%;
+    }
+
+    .contactForm textarea {
+        width: 77%;
+    }
+
+    .messageBtn {
+        width: 160px;
+        height: 50px;
+        font-size: 15px;
+    }
+} 

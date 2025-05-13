@@ -2,11 +2,14 @@
     width: 100%;
     margin-top: 40px;
     border-top: 1px solid #2f4156;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
-    width: 95%;
-    padding: 10px 30px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +31,7 @@
     top: 45px;
 }
 
-.socialMedia{
+.socialMedia {
     display: flex;
     gap: 15px;
     position: relative;
@@ -36,13 +39,16 @@
     right: 15px;
 }
 
-.github, .linkedin, .twitter, .instagram{
+.github,
+.linkedin,
+.twitter,
+.instagram {
     padding: 10px;
     background: #F5EFEB;
     border-radius: 5px;
 }
 
-.rightsReserved{
+.rightsReserved {
     width: 450px;
     padding-bottom: 30px;
     font-size: 17px;
@@ -51,7 +57,7 @@
     left: 50px;
 }
 
-.conditions{
+.conditions {
     display: flex;
     gap: 40px;
     font-size: 17px;
@@ -60,4 +66,103 @@
     position: relative;
     top: 55px;
     right: 50px;
+}
+
+@media screen and (min-width: 360px) and (max-width: 412px) {
+
+    .name {
+        width: 280px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .email {
+        width: 350px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .socialMedia {
+        position: relative;
+        right: 0px;
+    }
+
+    .github,
+    .linkedin,
+    .twitter,
+    .instagram {
+        padding: 7px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .rightsReserved {
+        width: 340px;
+        padding-bottom: 30px;
+        font-size: 14px;
+        position: relative;
+        top: 130px;
+        left: 25px;
+    }
+
+    .conditions {
+        display: flex;
+        gap: 30px;
+        font-size: 12px;
+        justify-content: end;
+        align-items: center;
+        position: relative;
+        top: 50px;
+        right: 60px;
+    }
+}
+
+@media screen and (min-width: 413px) and (max-width: 512px) {
+
+    .name {
+        width: 280px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .email {
+        width: 350px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .socialMedia {
+        position: relative;
+        right: 0px;
+    }
+
+    .github,
+    .linkedin,
+    .twitter,
+    .instagram {
+        padding: 7px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .rightsReserved {
+        width: 340px;
+        padding-bottom: 30px;
+        font-size: 14px;
+        position: relative;
+        top: 130px;
+        left: 40px;
+    }
+
+    .conditions {
+        display: flex;
+        gap: 30px;
+        font-size: 12px;
+        justify-content: end;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        right: 78px;
+    }
 }

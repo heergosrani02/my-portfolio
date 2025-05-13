@@ -18,19 +18,19 @@ function ContactSection() {
           <div className={contactCss.contactMe}>
             <div className={contactCss.contacts}>
               <div className={contactCss.email}>
-                <IoMail size={30} />
+                <IoMail size={window.innerWidth > 600 ? 30 : 20} />
                 <p>Email Us</p>
                 <p>gosraniheer@gmail.com</p>
               </div>
 
               <div className={contactCss.linkedin}>
-                <FaLinkedin size={30} />
+                <FaLinkedin size={window.innerWidth > 600 ? 30 : 20} />
                 <p>My Profile</p>
                 <p>Heer Gosrani</p>
               </div>
 
               <div className={contactCss.location}>
-                <IoLocation size={30} />
+                <IoLocation size={window.innerWidth > 600 ? 30 : 20} />
                 <p>My Location</p>
                 <p>Gujarat, India</p>
               </div>
