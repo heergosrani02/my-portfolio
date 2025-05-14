@@ -1,11 +1,11 @@
 .container {
     width: 1370px;
-    height: 95vh;
+    height: 150vh;
     background: #F5EFEB;
     border-radius: 10px;
     position: relative;
     top: 100px;
-    left: 30px;
+    left: 15px;
 }
 
 .backWord {
@@ -231,10 +231,10 @@
     }
 }
 
- @media screen and (min-width: 413px) and (max-width: 512px) {
+@media screen and (min-width: 413px) and (max-width: 550px) {
     .container {
         width: 95%;
-        height: 51rem;
+        height: 80%;
         position: relative;
         top: 100px;
         left: 12px;
@@ -271,7 +271,7 @@
         height: 40px;
         font-size: 14px;
         position: relative;
-        top: 15px;
+        top: 6px;
         left: 20px;
     }
 
@@ -279,7 +279,7 @@
         width: 265px;
         font-size: 16px;
         position: relative;
-        top: 40px;
+        top: 17px;
         left: 20px;
     }
 
@@ -287,7 +287,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        top: 17px;
+        top: -5px;
         left: 200px;
     }
 
@@ -324,6 +324,105 @@
 
     .stack img {
         width: 30%;
+        padding-right: 10px;
+    }
+} 
+
+@media screen and (min-width: 551px) and (max-width: 711px) {
+    .container {
+        width: 95%;
+        height: 20%;
+        position: relative;
+        top: 125px;
+        left: 12px;
+    }
+
+    .backWord {
+        font-size: 65px;
+    }
+
+    .frontWord {
+        font-size: 35px;
+        position: relative;
+        top: -55px;
+    }
+
+    .intro {
+        width: 90%;
+        font-size: 16px;
+        line-height: 35px;
+        padding-left: 19px;
+    }
+
+    .info,
+    .email {
+        margin-top: 13px;
+        width: 90%;
+        font-size: 16px;
+        line-height: 30px;
+        padding-left: 19px;
+    }
+
+    .cvBtn {
+        width: 130px;
+        height: 40px;
+        font-size: 14px;
+        position: relative;
+        top: 12px;
+        left: 20px;
+    }
+
+    .connect {
+        width: 265px;
+        font-size: 16px;
+        position: relative;
+        top: -17px;
+        left: 167px;
+    }
+
+    .socialMedia {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        top: -40px;
+        left: 350px;
+    }
+
+    .techstack {
+        width: 100%;
+        height: 0%;
+        position: relative;
+        top: 120px;
+    }
+
+    .back {
+        font-size: 70px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .front {
+        font-size: 40px;
+        position: relative;
+        top: -60px;
+    }
+
+    .tech {
+        width: 95%;
+        position: relative;
+        top: 90px;
+        left: 18px;
+    }
+
+    .stack {
+        width: 42%;
+        margin: 6px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .stack img {
+        width: 26%;
         padding-right: 10px;
     }
 } 

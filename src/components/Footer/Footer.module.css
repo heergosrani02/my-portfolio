@@ -117,7 +117,7 @@
     }
 }
 
-@media screen and (min-width: 413px) and (max-width: 512px) {
+@media screen and (min-width: 413px) and (max-width: 550px) {
 
     .name {
         width: 280px;
@@ -146,23 +146,75 @@
     }
 
     .rightsReserved {
-        width: 340px;
+        width: 90%;
         padding-bottom: 30px;
-        font-size: 14px;
+        text-align: center;
+        font-size: 15px;
         position: relative;
         top: 130px;
-        left: 40px;
+        left: 50px;
     }
 
     .conditions {
         display: flex;
         gap: 30px;
-        font-size: 12px;
-        justify-content: end;
+        font-size: 13px;
+        justify-content: center;
         align-items: center;
         text-align: center;
         position: relative;
         top: 50px;
-        right: 78px;
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 711px) {
+
+    .name {
+        width: 280px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .email {
+        width: 350px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .socialMedia {
+        position: relative;
+        right: 0px;
+    }
+
+    .github,
+    .linkedin,
+    .twitter,
+    .instagram {
+        padding: 10px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .rightsReserved {
+        width: 84%;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 20px;
+        position: relative;
+        top: 140px;
+        left: 50px;
+    }
+
+    .conditions {
+        display: flex;
+        gap: 30px;
+        font-size: 16px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        right: 0px;
     }
 }

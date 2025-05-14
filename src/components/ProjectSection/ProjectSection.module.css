@@ -173,7 +173,7 @@
 
 }
 
-@media screen and (min-width: 413px) and (max-width: 512px) {
+@media screen and (min-width: 413px) and (max-width: 550px) {
     .backWord {
         font-size: 50px;
         padding-top: 40px;
@@ -211,7 +211,7 @@
     }
 
     .details {
-        width: 300px;
+        width: 92%;
         height: 28rem;
         display: flex;
         flex-wrap: wrap;
@@ -219,7 +219,7 @@
     }
 
     .details img {
-        width: 290px;
+        width: 350px;
         height: 180px;
         position: relative;
         left: 5px;
@@ -248,4 +248,81 @@
         left: 5px;
     }
 
+}
+
+@media screen and (min-width: 551px) and (max-width: 711px) {
+    .backWord {
+        font-size: 90px;
+        padding-top: 20px;
+    }
+
+    .frontWord {
+        font-size: 40px;
+        position: relative;
+        top: -40px;
+    }
+
+    .btn {
+        position: relative;
+        top: 72px;
+        left: 0px;
+    }
+
+    .allProjects {
+        position: relative;
+        top: -20px;
+        left: 10px;
+    }
+
+    .details {
+        width: 92%;
+        height: 28rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .details img {
+        width: 430px;
+        height: 230px;
+        position: relative;
+        left: 5px;
+    }
+
+    .details p:nth-child(1) {
+        font-size: 25px;
+        font-weight: 600;
+        position: relative;
+        top: 40px;
+        left: 5px;
+    }
+
+
+    .details p:nth-child(2) {
+        font-size: 18px;
+        position: relative;
+        top: 50px;
+        left: 5px;
+    }
+
+    .details p:nth-child(3) {
+        font-size: 18px;
+        position: relative;
+        top: 60px;
+        left: 5px;
+    }
+
+     .btnGit {
+        width: 142px;
+        height: 40px;
+        padding: 0;
+        font-size: 17px;
+    }
+
+    .btnCheck {
+        width: 142px;
+        height: 40px;
+        padding: 0;
+        font-size: 15px;
+    }
 }

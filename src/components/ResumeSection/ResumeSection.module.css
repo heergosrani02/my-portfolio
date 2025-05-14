@@ -159,7 +159,7 @@
 }
 }
 
-@media screen and (min-width: 413px) and (max-width: 512px) {
+@media screen and (min-width: 413px) and (max-width: 550px) {
     .backWord {
     font-size: 60px;
     padding-top: 40px;
@@ -234,5 +234,83 @@
 
 .inner p:nth-child(4){
     font-size: 13px;
+}
+}
+
+@media screen and (min-width: 551px) and (max-width: 711px) {
+    .backWord {
+    font-size: 100px;
+    padding-top: 40px;
+}
+
+.frontWord {
+    font-size: 35px;
+    position: relative;
+    top: -7px;
+}
+
+.title{
+    width: 50%;
+    margin-top: 55px;
+    font-size: 35px;
+    display: flex;
+    gap: 9px;
+    position: relative;
+    left: 25px;
+}
+
+.border{
+    width: 90%;
+    border-bottom: 1px solid #2f4156;
+    position: relative;
+    left: 25px;
+}
+
+.details{
+    width: 90%;
+    margin-left: 25px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    display: flex;
+}
+
+.details img {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    background: #F5EFEB;
+    border-radius: 5px;
+}
+
+.education, .experience{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 4px;
+}
+
+.inner p:nth-child(1){
+    font-size: 17px;
+}
+
+.inner p:nth-child(2){
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inner p:nth-child(3){
+    font-size: 17px;
+}
+
+.inner p:nth-child(4){
+    font-size: 17px;
 }
 }
