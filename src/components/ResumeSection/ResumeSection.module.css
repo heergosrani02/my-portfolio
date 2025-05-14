@@ -15,7 +15,7 @@
     text-align: center;
 }
 
-.title{
+.title {
     width: 300px;
     margin-top: 20px;
     font-size: 40px;
@@ -25,14 +25,14 @@
     left: 235px;
 }
 
-.border{
+.border {
     width: 70%;
     border-bottom: 1px solid #2f4156;
     position: relative;
     left: 235px;
 }
 
-.details{
+.details {
     width: 70%;
     margin-left: 40px;
     padding-bottom: 20px;
@@ -50,267 +50,430 @@
     border-radius: 5px;
 }
 
-.education, .experience{
+.education,
+.experience {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.inner{
+.inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 4px;
 }
 
-.inner p:nth-child(1){
+.inner p:nth-child(1) {
     font-size: 20px;
 }
 
-.inner p:nth-child(2){
+.inner p:nth-child(2) {
     font-size: 25px;
     font-weight: 600;
 }
 
-.inner p:nth-child(3){
+.inner p:nth-child(3) {
     font-size: 22px;
 }
 
-.inner p:nth-child(4){
+.inner p:nth-child(4) {
     font-size: 20px;
 }
 
 @media screen and (min-width: 360px) and (max-width: 412px) {
     .backWord {
-    font-size: 60px;
-    padding-top: 40px;
-}
+        font-size: 60px;
+        padding-top: 40px;
+    }
 
-.frontWord {
-    font-size: 25px;
-    position: relative;
-    top: 15px;
-}
+    .frontWord {
+        font-size: 25px;
+        position: relative;
+        top: 15px;
+    }
 
-.title{
-    width: 50%;
-    margin-top: 55px;
-    font-size: 25px;
-    display: flex;
-    gap: 9px;
-    position: relative;
-    left: 25px;
-}
+    .title {
+        width: 50%;
+        margin-top: 55px;
+        font-size: 25px;
+        display: flex;
+        gap: 9px;
+        position: relative;
+        left: 25px;
+    }
 
-.border{
-    width: 90%;
-    border-bottom: 1px solid #2f4156;
-    position: relative;
-    left: 25px;
-}
+    .border {
+        width: 90%;
+        border-bottom: 1px solid #2f4156;
+        position: relative;
+        left: 25px;
+    }
 
-.details{
-    width: 90%;
-    margin-left: 25px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    display: flex;
-}
+    .details {
+        width: 90%;
+        margin-left: 25px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        display: flex;
+    }
 
-.details img {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    margin-right: 20px;
-    background: #F5EFEB;
-    border-radius: 5px;
-}
+    .details img {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        margin-right: 20px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
 
-.education, .experience{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
+    .education,
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
 
-.inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 4px;
-}
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 4px;
+    }
 
-.inner p:nth-child(1){
-    font-size: 13px;
-}
+    .inner p:nth-child(1) {
+        font-size: 13px;
+    }
 
-.inner p:nth-child(2){
-    font-size: 18px;
-    font-weight: 600;
-}
+    .inner p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
+    }
 
-.inner p:nth-child(3){
-    font-size: 13px;
-}
+    .inner p:nth-child(3) {
+        font-size: 13px;
+    }
 
-.inner p:nth-child(4){
-    font-size: 13px;
-}
+    .inner p:nth-child(4) {
+        font-size: 13px;
+    }
 }
 
 @media screen and (min-width: 413px) and (max-width: 550px) {
     .backWord {
-    font-size: 60px;
-    padding-top: 40px;
+        font-size: 60px;
+        padding-top: 40px;
+    }
+
+    .frontWord {
+        font-size: 25px;
+        position: relative;
+        top: 15px;
+    }
+
+    .title {
+        width: 50%;
+        margin-top: 55px;
+        font-size: 25px;
+        display: flex;
+        gap: 9px;
+        position: relative;
+        left: 25px;
+    }
+
+    .border {
+        width: 90%;
+        border-bottom: 1px solid #2f4156;
+        position: relative;
+        left: 25px;
+    }
+
+    .details {
+        width: 90%;
+        margin-left: 25px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        display: flex;
+    }
+
+    .details img {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        margin-right: 20px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .education,
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 4px;
+    }
+
+    .inner p:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .inner p:nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .inner p:nth-child(3) {
+        font-size: 13px;
+    }
+
+    .inner p:nth-child(4) {
+        font-size: 13px;
+    }
 }
 
-.frontWord {
-    font-size: 25px;
-    position: relative;
-    top: 15px;
-}
-
-.title{
-    width: 50%;
-    margin-top: 55px;
-    font-size: 25px;
-    display: flex;
-    gap: 9px;
-    position: relative;
-    left: 25px;
-}
-
-.border{
-    width: 90%;
-    border-bottom: 1px solid #2f4156;
-    position: relative;
-    left: 25px;
-}
-
-.details{
-    width: 90%;
-    margin-left: 25px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    display: flex;
-}
-
-.details img {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    margin-right: 20px;
-    background: #F5EFEB;
-    border-radius: 5px;
-}
-
-.education, .experience{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
-
-.inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 4px;
-}
-
-.inner p:nth-child(1){
-    font-size: 13px;
-}
-
-.inner p:nth-child(2){
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.inner p:nth-child(3){
-    font-size: 13px;
-}
-
-.inner p:nth-child(4){
-    font-size: 13px;
-}
-}
-
-@media screen and (min-width: 551px) and (max-width: 711px) {
+@media screen and (min-width: 551px) and (max-width: 723px) {
     .backWord {
-    font-size: 100px;
-    padding-top: 40px;
+        font-size: 100px;
+        padding-top: 40px;
+    }
+
+    .frontWord {
+        font-size: 35px;
+        position: relative;
+        top: -7px;
+    }
+
+    .title {
+        width: 50%;
+        margin-top: 55px;
+        font-size: 35px;
+        display: flex;
+        gap: 9px;
+        position: relative;
+        left: 25px;
+    }
+
+    .border {
+        width: 90%;
+        border-bottom: 1px solid #2f4156;
+        position: relative;
+        left: 25px;
+    }
+
+    .details {
+        width: 90%;
+        margin-left: 25px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        display: flex;
+    }
+
+    .details img {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        margin-right: 20px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .education,
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 4px;
+    }
+
+    .inner p:nth-child(1) {
+        font-size: 17px;
+    }
+
+    .inner p:nth-child(2) {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .inner p:nth-child(3) {
+        font-size: 17px;
+    }
+
+    .inner p:nth-child(4) {
+        font-size: 17px;
+    }
 }
 
-.frontWord {
-    font-size: 35px;
-    position: relative;
-    top: -7px;
+@media screen and (min-width: 724px) and (max-width: 1024px) {
+    .backWord {
+        font-size: 130px;
+        padding-top: 40px;
+    }
+
+    .frontWord {
+        font-size: 45px;
+        position: relative;
+        top: -30px;
+    }
+
+    .title {
+        width: 50%;
+        margin-top: 55px;
+        font-size: 37px;
+        display: flex;
+        gap: 9px;
+        position: relative;
+        left: 25px;
+    }
+
+    .border {
+        width: 90%;
+        border-bottom: 1px solid #2f4156;
+        position: relative;
+        left: 25px;
+    }
+
+    .details {
+        width: 90%;
+        margin-left: 25px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        display: flex;
+    }
+
+    .details img {
+        width: 43px;
+        height: 43px;
+        padding: 10px;
+        margin-right: 20px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .education,
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 4px;
+    }
+
+    .inner p:nth-child(1) {
+        font-size: 19px;
+    }
+
+    .inner p:nth-child(2) {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .inner p:nth-child(3) {
+        font-size: 19px;
+    }
+
+    .inner p:nth-child(4) {
+        font-size: 19px;
+    }
 }
 
-.title{
-    width: 50%;
-    margin-top: 55px;
-    font-size: 35px;
-    display: flex;
-    gap: 9px;
-    position: relative;
-    left: 25px;
-}
+@media screen and (min-width: 1025px) and (max-width: 1380px) {
+    .backWord {
+        font-size: 130px;
+        padding-top: 40px;
+    }
 
-.border{
-    width: 90%;
-    border-bottom: 1px solid #2f4156;
-    position: relative;
-    left: 25px;
-}
+    .frontWord {
+        font-size: 45px;
+        position: relative;
+        top: -30px;
+    }
 
-.details{
-    width: 90%;
-    margin-left: 25px;
-    padding-bottom: 20px;
-    padding-top: 30px;
-    display: flex;
-}
+    .title {
+        width: 50%;
+        margin-top: 55px;
+        font-size: 37px;
+        display: flex;
+        justify-content: center;
+        gap: 9px;
+        position: relative;
+        left: 25px;
+    }
 
-.details img {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    margin-right: 20px;
-    background: #F5EFEB;
-    border-radius: 5px;
-}
+    .border {
+        width: 70%;
+        border-bottom: 1px solid #2f4156;
+        position: relative;
+        left: 210px;
+    }
 
-.education, .experience{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-}
+    .details {
+        width: 70%;
+        margin-left: 25px;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        display: flex;
+    }
 
-.inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    gap: 4px;
-}
+    .details img {
+        width: 43px;
+        height: 43px;
+        padding: 10px;
+        margin-right: 20px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
 
-.inner p:nth-child(1){
-    font-size: 17px;
-}
+    .education,
+    .experience {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-.inner p:nth-child(2){
-    font-size: 20px;
-    font-weight: 600;
-}
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
 
-.inner p:nth-child(3){
-    font-size: 17px;
-}
+    .inner p:nth-child(1) {
+        font-size: 19px;
+    }
 
-.inner p:nth-child(4){
-    font-size: 17px;
-}
+    .inner p:nth-child(2) {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .inner p:nth-child(3) {
+        font-size: 19px;
+    }
+
+    .inner p:nth-child(4) {
+        font-size: 19px;
+    }
 }

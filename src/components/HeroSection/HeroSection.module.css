@@ -1,39 +1,39 @@
-.container{
+.container {
     width: 1200px;
     height: 600px;
     margin: 10px 35px;
     border-radius: 10px;
-} 
+}
 
-.intro{
+.intro {
     font-size: 45px;
     position: relative;
     top: 150px;
     left: 30px;
 }
 
-.intro1{
+.intro1 {
     font-size: 45px;
     position: relative;
     top: 170px;
     left: 30px;
 }
 
-.myRole{
+.myRole {
     font-size: 45px;
     position: relative;
     top: 190px;
     left: 30px;
 }
 
-span{
+span {
     padding: 6px;
     color: #F5EFEB;
     background-color: #2f4156;
     border-radius: 7px;
 }
 
-.heroImg img{
+.heroImg img {
     height: 620px;
     position: absolute;
     top: 100px;
@@ -41,7 +41,7 @@ span{
     filter: drop-shadow(10px 10px 30px #2f415673);
 }
 
-.glass{
+.glass {
     width: 270px;
     padding: 20px;
     font-size: 18px;
@@ -54,7 +54,7 @@ span{
     backdrop-filter: blur(10px);
 }
 
-.downloadCv{
+.downloadCv {
     width: 190px;
     padding: 20px;
     font-size: 19px;
@@ -66,39 +66,39 @@ span{
     cursor: pointer;
 }
 
-.down{
+.down {
     position: relative;
     top: 4px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 412px){
-    .container{
+@media screen and (min-width: 360px) and (max-width: 412px) {
+    .container {
         width: 100%;
         margin: 0px;
-    } 
+    }
 
-    .intro{
+    .intro {
         width: 300px;
         font-size: 25px;
         position: relative;
         top: 140px;
     }
 
-    .intro1{
+    .intro1 {
         width: 300px;
         font-size: 25px;
         position: relative;
         top: 160px;
     }
 
-    .myRole{
+    .myRole {
         width: 320px;
         font-size: 25px;
         position: relative;
         top: 180px;
     }
 
-    .heroImg img{
+    .heroImg img {
         width: 90%;
         height: 420px;
         position: absolute;
@@ -106,7 +106,7 @@ span{
         right: 70px;
     }
 
-    .glass{
+    .glass {
         width: 135px;
         padding: 12px;
         font-size: 10px;
@@ -115,7 +115,7 @@ span{
         left: 200px;
     }
 
-    .downloadCv{
+    .downloadCv {
         width: 100px;
         padding: 5px;
         font-size: 10px;
@@ -126,33 +126,33 @@ span{
 }
 
 @media screen and (min-width: 413px) and (max-width: 550px) {
-    .container{
+    .container {
         width: 100%;
         margin: 0px;
-    } 
+    }
 
-    .intro{
+    .intro {
         width: 374px;
         font-size: 30px;
         position: relative;
         top: 120px;
     }
 
-    .intro1{
+    .intro1 {
         width: 374px;
         font-size: 30px;
         position: relative;
         top: 140px;
     }
 
-    .myRole{
+    .myRole {
         width: 383px;
         font-size: 30px;
         position: relative;
         top: 160px;
     }
 
-    .heroImg img{
+    .heroImg img {
         width: 70%;
         height: 420px;
         position: absolute;
@@ -160,7 +160,7 @@ span{
         left: 10px;
     }
 
-    .glass{
+    .glass {
         width: 135px;
         padding: 12px;
         font-size: 10px;
@@ -169,7 +169,7 @@ span{
         left: 260px;
     }
 
-    .downloadCv{
+    .downloadCv {
         width: 100px;
         padding: 5px;
         font-size: 10px;
@@ -179,34 +179,34 @@ span{
     }
 }
 
-@media screen and (min-width: 551px) and (max-width: 711px) {
-    .container{
+@media screen and (min-width: 551px) and (max-width: 723px) {
+    .container {
         width: 100%;
         margin: 0px;
-    } 
+    }
 
-    .intro{
+    .intro {
         width: 374px;
         font-size: 40px;
         position: relative;
         top: 120px;
     }
 
-    .intro1{
+    .intro1 {
         width: 442px;
         font-size: 40px;
         position: relative;
         top: 140px;
     }
 
-    .myRole{
+    .myRole {
         width: 506px;
         font-size: 40px;
         position: relative;
         top: 160px;
     }
 
-    .heroImg img{
+    .heroImg img {
         width: 55%;
         height: 420px;
         position: relative;
@@ -214,7 +214,7 @@ span{
         left: -5px;
     }
 
-    .glass{
+    .glass {
         width: 235px;
         padding: 12px;
         font-size: 15px;
@@ -223,7 +223,7 @@ span{
         left: 260px;
     }
 
-    .downloadCv{
+    .downloadCv {
         width: 140px;
         padding: 5px;
         font-size: 15px;
@@ -232,3 +232,113 @@ span{
         left: 350px;
     }
 }
+
+@media screen and (min-width: 724px) and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .intro {
+        width: 374px;
+        font-size: 45px;
+        position: relative;
+        top: 120px;
+    }
+
+    .intro1 {
+        width: 463px;
+        font-size: 45px;
+        position: relative;
+        top: 140px;
+    }
+
+    .myRole {
+        width: 575px;
+        font-size: 45px;
+        position: relative;
+        top: 160px;
+    }
+
+    .heroImg img {
+        width: 46%;
+        height: 420px;
+        position: relative;
+        top: 180px;
+        left: -5px;
+    }
+
+    .glass {
+        width: 255px;
+        padding: 12px;
+        font-size: 17px;
+        position: relative;
+        top: -130px;
+        left: 330px;
+    }
+
+    .downloadCv {
+        width: 150px;
+        padding: 5px;
+        font-size: 16px;
+        position: relative;
+        top: -120px;
+        left: 430px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1380px){
+    .container {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .intro {
+        width: 90%;
+        font-size: 40px;
+        position: relative;
+        top: 150px;
+        left: 30px;
+    }
+
+    .intro1 {
+        width: 90%;
+        font-size: 40px;
+        position: relative;
+        top: 170px;
+        left: 30px;
+    }
+
+    .myRole {
+        width: 90%;
+        font-size: 40px;
+        position: relative;
+        top: 190px;
+        left: 30px;
+    }
+
+    .heroImg img {
+        height: 620px;
+        position: absolute;
+        top: 100px;
+        right: 160px;
+    }
+
+    .glass {
+        width: 255px;
+        padding: 12px;
+        font-size: 17px;
+        position: relative;
+        top: 141px;
+        left: 700px;
+    }
+
+    .downloadCv {
+        width: 150px;
+        padding: 5px;
+        font-size: 16px;
+        position: relative;
+        top: 151px;
+        left: 810px;
+    }
+} 

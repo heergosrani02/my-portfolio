@@ -168,7 +168,7 @@
     }
 }
 
-@media screen and (min-width: 551px) and (max-width: 711px) {
+@media screen and (min-width: 551px) and (max-width: 723px) {
 
     .name {
         width: 280px;
@@ -215,6 +215,107 @@
         text-align: center;
         position: relative;
         top: 50px;
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 724px) and (max-width: 1024px) {
+
+    .name {
+        width: 280px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .email {
+        width: 350px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .socialMedia {
+        position: relative;
+        right: 0px;
+    }
+
+    .github,
+    .linkedin,
+    .twitter,
+    .instagram {
+        padding: 10px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .rightsReserved {
+        width: 84%;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        top: 140px;
+        left: 50px;
+    }
+
+    .conditions {
+        display: flex;
+        gap: 30px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 40px;
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1380px){
+    .name {
+        width: 280px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .email {
+        width: 350px;
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .socialMedia {
+        position: relative;
+        right: 0px;
+    }
+
+    .github,
+    .linkedin,
+    .twitter,
+    .instagram {
+        padding: 10px;
+        background: #F5EFEB;
+        border-radius: 5px;
+    }
+
+    .rightsReserved {
+        width: 84%;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 25px;
+        position: relative;
+        top: 140px;
+        left: 120px;
+    }
+
+    .conditions {
+        display: flex;
+        gap: 30px;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 40px;
         right: 0px;
     }
 }

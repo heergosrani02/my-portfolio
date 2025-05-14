@@ -1,6 +1,5 @@
 .container {
-    width: 1370px;
-    height: 150vh;
+    width: 98%;
     background: #F5EFEB;
     border-radius: 10px;
     position: relative;
@@ -137,7 +136,6 @@
 @media screen and (min-width: 360px) and (max-width: 412px){
     .container {
         width: 95%;
-        height: 52rem;
         position: relative;
         top: 100px;
         left: 12px;
@@ -174,7 +172,7 @@
         height: 40px;
         font-size: 14px;
         position: relative;
-        top: 15px;
+        top: 6px;
         left: 20px;
     }
 
@@ -182,16 +180,16 @@
         width: 265px;
         font-size: 16px;
         position: relative;
-        top: 40px;
-        left: 20px;
+        top: 20px;
+        left: 25px;
     }
 
     .socialMedia {
         display: flex;
         gap: 10px;
         position: relative;
-        top: 17px;
-        left: 200px;
+        top: -5px;
+        left: 206px;
     }
 
     .techstack {
@@ -328,7 +326,7 @@
     }
 } 
 
-@media screen and (min-width: 551px) and (max-width: 711px) {
+@media screen and (min-width: 551px) and (max-width: 723px) {
     .container {
         width: 95%;
         height: 20%;
@@ -349,7 +347,7 @@
 
     .intro {
         width: 90%;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 35px;
         padding-left: 19px;
     }
@@ -358,7 +356,7 @@
     .email {
         margin-top: 13px;
         width: 90%;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 30px;
         padding-left: 19px;
     }
@@ -415,7 +413,7 @@
     }
 
     .stack {
-        width: 42%;
+        width: 30%;
         margin: 6px;
         font-size: 20px;
         border-radius: 5px;
@@ -426,3 +424,200 @@
         padding-right: 10px;
     }
 } 
+
+@media screen and (min-width: 724px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+        height: 20%;
+        position: relative;
+        top: 125px;
+        left: 20px;
+    }
+
+    .backWord {
+        font-size: 85px;
+    }
+
+    .frontWord {
+        font-size: 45px;
+        position: relative;
+        top: -70px;
+    }
+
+    .intro {
+        width: 87%;
+        font-size: 19px;
+        line-height: 38px;
+        padding-left: 27px;
+    }
+
+    .info,
+    .email {
+        margin-top: 13px;
+        width: 87%;
+        font-size: 19px;
+        line-height: 38px;
+        padding-left: 27px;
+    }
+
+    .cvBtn {
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+        position: relative;
+        top: 12px;
+        left: 30px;
+    }
+
+    .connect {
+        width: 265px;
+        font-size: 17px;
+        position: relative;
+        top: -17px;
+        left: 197px;
+    }
+
+    .socialMedia {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        top: -40px;
+        left: 385px;
+    }
+
+    .techstack {
+        width: 100%;
+        height: 0%;
+        position: relative;
+        top: 120px;
+    }
+
+    .back {
+        font-size: 80px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .front {
+        font-size: 45px;
+        position: relative;
+        top: -70px;
+    }
+
+    .tech {
+        width: 95%;
+        position: relative;
+        top: 90px;
+        left: 18px;
+    }
+
+    .stack {
+        width: 20%;
+        margin: 6px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+    .stack img {
+        width: 26%;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1380px){
+    .container {
+        width: 97%;
+        position: relative;
+        top: 104px;
+        left: 20px;
+    }
+
+    .backWord {
+        font-size: 95px;
+    }
+
+    .frontWord {
+        font-size: 50px;
+        position: relative;
+        top: -75px;
+    }
+
+    .intro {
+        width: 94%;
+        font-size: 19px;
+        line-height: 38px;
+        padding-left: 27px;
+    }
+
+    .info,
+    .email {
+        width: 94%;
+        margin-top: 13px;
+        font-size: 19px;
+        line-height: 38px;
+        padding-left: 27px;
+    }
+
+    .cvBtn {
+        width: 150px;
+        height: 50px;
+        font-size: 17px;
+        position: relative;
+        top: 12px;
+        left: 30px;
+    }
+
+    .connect {
+        width: 265px;
+        font-size: 17px;
+        position: relative;
+        top: -17px;
+        left: 197px;
+    }
+
+    .socialMedia {
+        display: flex;
+        gap: 10px;
+        position: relative;
+        top: -40px;
+        left: 385px;
+    }
+
+    .techstack {
+        width: 100%;
+        height: 0%;
+        position: relative;
+        top: 120px;
+    }
+
+    .back {
+        font-size: 80px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .front {
+        font-size: 45px;
+        position: relative;
+        top: -70px;
+    }
+
+    .tech {
+        width: 95%;
+        position: relative;
+        top: 90px;
+        left: 18px;
+    }
+
+    .stack {
+        width: 14%;
+        margin: 6px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
+    .stack img {
+        width: 26%;
+        padding-right: 10px;
+    }
+}
