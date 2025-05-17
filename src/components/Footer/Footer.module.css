@@ -31,7 +31,7 @@
     top: 45px;
 }
 
-.socialMedia {
+.socialmedia {
     display: flex;
     gap: 15px;
     position: relative;
@@ -146,7 +146,7 @@
     }
 
     .rightsReserved {
-        width: 90%;
+        width: 78%;
         padding-bottom: 30px;
         text-align: center;
         font-size: 15px;

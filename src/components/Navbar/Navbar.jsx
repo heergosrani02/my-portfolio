@@ -1,64 +1,93 @@
 import navbarCss from "./Navbar.module.css";
+import SocialMedia from "../../UI/SocialMedia/SocialMedia.jsx";
+import {
+  divVariant,
+  itemVariant,
+  listVariant,
+  logoVariant,
+  menuVariant,
+  navVariant,
+} from "./NavbarVariants.js";
 import { links } from "./../../data.js";
 
 import { CgMenuRightAlt } from "react-icons/cg";
 import { RxCross2 } from "react-icons/rx";
-import { FaGithub, FaXTwitter, FaInstagram, FaLinkedin  } from "react-icons/fa6";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
 
 function Navbar() {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   const handleMenu = () => {
-    setOpen(!isOpen); 
+    setOpen(!isOpen);
   };
 
   return (
     <>
       <header>
-        <nav>
+        <motion.nav variants={navVariant} initial="hidden" animate="visible">
           <div className={navbarCss.nav}>
-            <div className={navbarCss.navLogo}>
+            <motion.div
+              className={navbarCss.navLogo}
+              variants={logoVariant}
+              initial="hidden"
+              animate="visible"
+            >
               <p>HG.</p>
-            </div>
+            </motion.div>
           </div>
 
-          <div className={navbarCss.socialMedia}>
-            <div className={navbarCss.github}>
-              <FaGithub size={25} />
-            </div>
-            <div className={navbarCss.twitter}>
-              <FaXTwitter size={25}/>
-            </div>
-            <div className={navbarCss.linkedin}>
-              <FaLinkedin size={25}/>
-            </div>
-            <div className={navbarCss.instagram}>
-              <FaInstagram size={25}/>
-            </div>
-          </div>
+          <AnimatePresence>
+            {!isOpen && (
+              <motion.div
+                key="menu"
+                className={navbarCss.navMenu}
+                variants={menuVariant}
+                initial="hidden"
+                animate="visible"
+              >
+                <CgMenuRightAlt size={32} onClick={handleMenu} />
+              </motion.div>
+            )} 
+            
+            {isOpen && (
+              <motion.div
+                key="nav"
+                className={navbarCss.navContainer}
+                variants={divVariant}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+              >
+                <RxCross2
+                  size={32}
+                  onClick={handleMenu}
+                  className={navbarCss.cross}
+                />
 
-          {isOpen ? (
-            <div className={navbarCss.navMenu}>
-              <CgMenuRightAlt size={32} onClick={handleMenu} />
-            </div>
-          ) : (
-            <div className={navbarCss.navContainer}>
-              <RxCross2
-                size={32}
-                onClick={handleMenu}
-                className={navbarCss.cross}
-              />
+                <motion.ul
+                  variants={listVariant}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                >
+                  {links.map((name, index) => (
+                    <motion.li
+                      key={index}
+                      variants={itemVariant}
+                      whileHover={{scale: 1.05, y:-5}}
+                    >
+                      <p>{name}</p>
+                    </motion.li>
+                  ))}
+                </motion.ul>
 
-              <ul>
-                {links.map((name, index) => (
-                  <li key={index}>{name}</li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </nav>
+                <SocialMedia />
+              </motion.div>
+            )}
+          </AnimatePresence>
+        </motion.nav>
       </header>
     </>
   );

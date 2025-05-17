@@ -1,7 +1,5 @@
 import footerCss from "./Footer.module.css";
-
-import { FaInstagram, FaLinkedin, FaXTwitter } from "react-icons/fa6";
-import { FaGithub } from "react-icons/fa";
+import SocialMedia from "../../UI/SocialMedia/SocialMedia";
 
 function Footer() {
   return (
@@ -15,20 +13,7 @@ function Footer() {
             <p>gosraniheer@gmail.com</p>
           </div>
 
-          <div className={footerCss.socialMedia}>
-            <div className={footerCss.github}>
-              <FaGithub size={25} />
-            </div>
-            <div className={footerCss.twitter}>
-              <FaXTwitter size={25} />
-            </div>
-            <div className={footerCss.linkedin}>
-              <FaLinkedin size={25} />
-            </div>
-            <div className={footerCss.instagram}>
-              <FaInstagram size={25} />
-            </div>
-          </div>
+          <SocialMedia />
         </div>
       </div>
 

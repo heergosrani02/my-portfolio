@@ -19,14 +19,6 @@ nav{
     padding-left: 30px;
 }
 
-.socialMedia{
-    display: flex;
-    gap: 20px;
-    position: absolute;
-    top: 30px;
-    right: 80px;
-}
-
 .toggleBtn{
     position: absolute;
     right: 80px;
@@ -68,6 +60,7 @@ nav{
     padding: 10px;
     font-size: 35px;
     color: #2F4156;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
