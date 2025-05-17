@@ -6,44 +6,41 @@ import { itemVariant, mainVariant } from "./SocialVariants";
 function SocialMedia() {
   return (
     <>
-      <AnimatePresence>
+      <motion.div
+        className={socialCss.socialMedia}
+        variants={mainVariant}
+        initial="hidden"
+        animate="visible"
+      >
         <motion.div
-          key="mainDiv"
-          className={socialCss.socialMedia}
-          variants={mainVariant}
-          initial="hidden"
-          animate="visible"
+          className={socialCss.github}
+          variants={itemVariant}
+          whileHover={{ x: "10%", y: "-10%" }}
         >
-          <motion.div
-            key="github"
-            className={socialCss.github}
-            variants={itemVariant}
-          >
-            <FaGithub size={25} />
-          </motion.div>
-          <motion.div
-            key="twitter"
-            className={socialCss.twitter}
-            variants={itemVariant}
-          >
-            <FaXTwitter size={25} />
-          </motion.div>
-          <motion.div
-            key="linkedin"
-            className={socialCss.linkedin}
-            variants={itemVariant}
-          >
-            <FaLinkedin size={25} />
-          </motion.div>
-          <motion.div
-            key="instagram"
-            className={socialCss.instagram}
-            variants={itemVariant}
-          >
-            <FaInstagram size={25} />
-          </motion.div>
+          <FaGithub size={25} />
         </motion.div>
-      </AnimatePresence>
+        <motion.div
+          className={socialCss.twitter}
+          variants={itemVariant}
+          whileHover={{ x: "10%", y: "-10%" }}
+        >
+          <FaXTwitter size={25} />
+        </motion.div>
+        <motion.div
+          className={socialCss.linkedin}
+          variants={itemVariant}
+          whileHover={{ x: "10%", y: "-10%" }}
+        >
+          <FaLinkedin size={25} />
+        </motion.div>
+        <motion.div
+          className={socialCss.instagram}
+          variants={itemVariant}
+          whileHover={{ x: "10%", y: "-10%" }}
+        >
+          <FaInstagram size={25} />
+        </motion.div>
+      </motion.div>
     </>
   );
 }

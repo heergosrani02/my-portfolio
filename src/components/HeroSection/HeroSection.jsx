@@ -1,39 +1,67 @@
 import heroCss from "./HeroSection.module.css";
-import person from "./../../assets/img/heer.png"
+import { motion } from "motion/react";
+
+import person from "./../../assets/img/heer.png";
 import { HiDownload } from "react-icons/hi";
 
-function HeroSection(){
-    return(
-        <>
-           <section>
-                <div className={heroCss.container}>
-                    <div className={heroCss.intro}>
-                        <p>Hello, </p>
-                    </div>
+import { containerVariant, childVariant, letterVariant } from "./HeroVariants";
 
-                    <div className={heroCss.intro1}>
-                        <p> I'm <span>Heer Gosrani</span>,</p>
-                    </div> 
+function HeroSection() {
+  const letter =
+    "- I'm creative developer, and designer based in India, and I'm very passionate and dedicated to my work.";
 
-                    <div className={heroCss.myRole}>
-                        <p>a <span>Software</span> Developer.</p>
-                    </div>
+  return (
+    <>
+      <section>
+        <motion.div
+          className={heroCss.container}
+          variants={containerVariant}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div className={heroCss.intro} variants={childVariant}>
+            <p>Hello, </p>
+          </motion.div>
 
-                    <div className={heroCss.heroImg}>
-                        <img src={person} alt="person" />
-                    </div>
+          <motion.div className={heroCss.intro1} variants={childVariant}>
+            <p>
+              I'm <span>Heer Gosrani</span>,
+            </p>
+          </motion.div>
 
-                    <div className={heroCss.glass}>
-                        <p>- I'm creative developer, and designer based in India, and I'm very passionate and dedicated to my work.</p>
-                    </div>
+          <motion.div className={heroCss.myRole} variants={childVariant}>
+            <p>
+              a <span>Software</span> Developer.
+            </p>
+          </motion.div>
 
-                    <div className={heroCss.downloadCv}>
-                        <p> - Download Cv <HiDownload className={heroCss.down}/></p>
-                    </div>
-                </div>
-           </section>
-        </>
-    )
+          <div className={heroCss.heroImg}>
+            <motion.img src={person} alt="person" variants={childVariant} />
+          </div>
+
+          <motion.div className={heroCss.glass} variants={letterVariant}>
+            {letter.split("").map((char, index) => {
+              return (
+                <motion.span key={index} variants={childVariant}>
+                  {char}
+                </motion.span>
+              );
+            })}
+          </motion.div>
+
+          <motion.div
+            className={heroCss.downloadCv}
+            variants={childVariant}
+            whileHover={{ scale: 1.1, type: "spring" }}
+          >
+            <p>
+              - Download Cv <HiDownload className={heroCss.down} />
+            </p>
+          </motion.div>
+        </motion.div>
+      </section>
+    </>
+  );
 }
 
-export default HeroSection
+export default HeroSection;

@@ -20,8 +20,7 @@ function AboutSection(){
             <div className={aboutCss.intro}>
               <p>
                 - Hi, I'm <span>Heer Gosrani</span>, a passionate and
-                self-driven
-                <span>MERN Stack Developer</span>. I specialize in creating
+                self-driven <span> MERN Stack Developer</span>. I specialize in creating
                 full-stack web applications that are fast, scalable, and
                 user-friendly. My journey into web development began with a
                 strong curiosity about how digital products work — and it
@@ -32,7 +31,7 @@ function AboutSection(){
             <div className={aboutCss.info}>
               <p>
                 - Currently, I'm focused on mastering
-                <span>API integrations</span> in React and exploring ways to
+                <span> API integrations</span> in React and exploring ways to
                 optimize app performance and user experience. I believe in
                 writing clean, efficient code and love turning ideas into
                 working products that people can actually use.

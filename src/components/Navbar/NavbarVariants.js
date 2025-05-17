@@ -48,7 +48,7 @@ export const divVariant = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 0.8,
+            duration: 0.6,
             ease: "easeOut",
         }
     },
@@ -57,7 +57,7 @@ export const divVariant = {
       opacity: 0,
       x: "100vw",
       transition: {
-        duration: 0.8,
+        duration: 0.6,
         ease: "easeIn",
       }
     }
