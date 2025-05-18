@@ -1,7 +1,7 @@
 .socialMedia{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
     position: relative;
     top: 70px;
     cursor: pointer;

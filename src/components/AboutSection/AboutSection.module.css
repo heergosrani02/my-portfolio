@@ -39,6 +39,13 @@
     text-align: start;
 }
 
+.intro span, .info span {
+    padding: 6px;
+    color: #F5EFEB;
+    background-color: #2f4156;
+    border-radius: 7px;
+}
+
 .email {
     margin-top: 20px;
     width: 95%;
@@ -76,7 +83,7 @@
     display: flex;
     gap: 20px;
     position: relative;
-    top: -30px;
+    top: -100px;
     left: 540px;
     cursor: pointer;
 }
@@ -188,7 +195,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        top: -5px;
+        top: -75px;
         left: 206px;
     }
 
@@ -285,7 +292,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        top: -5px;
+        top: -77px;
         left: 200px;
     }
 
@@ -382,7 +389,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        top: -40px;
+        top: -107px;
         left: 350px;
     }
 
@@ -481,7 +488,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        top: -40px;
+        top: -107px;
         left: 385px;
     }
 
@@ -579,7 +586,7 @@
         display: flex;
         gap: 10px;
         position: relative;
-        top: -40px;
+        top: -107px;
         left: 385px;
     }
 

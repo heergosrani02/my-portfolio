@@ -1,5 +1,5 @@
 import { FaGithub, FaXTwitter, FaInstagram, FaLinkedin } from "react-icons/fa6";
-import { AnimatePresence, motion } from "motion/react";
+import { motion } from "motion/react";
 import socialCss from "./SocialMedia.module.css";
 import { itemVariant, mainVariant } from "./SocialVariants";
 

@@ -59,17 +59,17 @@
 
 .details {
     width: 97%;
-    height: 28rem;
+    height: 26rem;
     display: flex;
     gap: 10px;
 }
 
 .details img {
-    width: 48%;
+    width: 50%;
     border-radius: 5px;
     position: relative;
     top: 30px;
-    left: 15px;
+    left: 5px;
 }
 
 .details p:nth-child(1) {
