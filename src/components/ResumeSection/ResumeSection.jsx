@@ -1,31 +1,38 @@
 import resumeCss from "./ResumeSection.module.css";
 import { education, experience } from "./../../data.js";
 
+import { motion } from "motion/react"
+
 import { IoSchool } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
+import { childVariant, staggerVariant, titleVariant } from "./ResumeVariants.js";
 
 function ResumeSection() {
   return (
     <>
       <section>
         <div className={resumeCss.container}>
+          <motion.div variants={titleVariant} initial="hidden" animate="visible">
+
           <div className={resumeCss.backWord}>
             <p>Resume</p>
           </div>
           <div className={resumeCss.frontWord}>
             <p>My Resume</p>
           </div>
+          </motion.div>
 
-          <div className={resumeCss.title}>
-            <IoSchool size={window.innerWidth > 600 ? 43 : 30} />
-            <p>Education</p>
-          </div>
+          <motion.div variants={staggerVariant} initial="hidden" animate="visible">
+            <motion.div className={resumeCss.title} variants={childVariant}>
+              <IoSchool size={window.innerWidth > 600 ? 43 : 30} />
+              <p>Education</p>
+            </motion.div>
 
           <div className={resumeCss.border}></div>
 
           <div className={resumeCss.education}>
             {education.map((edu) => (
-              <div className={resumeCss.details} key={edu.id}>
+              <motion.div className={resumeCss.details} key={edu.id} variants={childVariant}>
                 <img src={edu.image} alt="czmgLogo" />
                 <div className={resumeCss.inner}>
                   <p>{edu.date}</p>
@@ -33,20 +40,20 @@ function ResumeSection() {
                   <p>{edu.courseName}</p>
                   <p>{edu.cityName}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
-          <div className={resumeCss.title}>
+          <motion.div className={resumeCss.title} variants={childVariant}>
             <MdWork size={window.innerWidth > 600 ? 43 : 30} />
             <p>Experience</p>
-          </div>
+          </motion.div>
 
           <div className={resumeCss.border}></div>
 
           <div className={resumeCss.experience}>
             {experience.map((edu) => (
-              <div className={resumeCss.details} key={edu.id}>
+              <motion.div className={resumeCss.details} key={edu.id} variants={childVariant}>
                 <img src={edu.image} alt="czmgLogo" />
                 <div className={resumeCss.inner}>
                   <p>{edu.date}</p>
@@ -54,9 +61,10 @@ function ResumeSection() {
                   <p>{edu.role}</p>
                   <p>{edu.cityName}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
+          </motion.div>
         </div>
       </section>
     </>

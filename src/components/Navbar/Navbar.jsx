@@ -60,11 +60,13 @@ function Navbar() {
                 animate="visible"
                 exit="exit"
               >
+                <motion.div variants={menuVariant}>
                 <RxCross2
                   size={32}
                   onClick={handleMenu}
                   className={navbarCss.cross}
                 />
+                </motion.div>
 
                 <motion.ul
                   variants={listVariant}
