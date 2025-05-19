@@ -16,7 +16,8 @@ function AboutSection(){
             className={aboutCss.container}
             variants={parentVariant}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3}}
           >
             <motion.div variants={childVariant}>
               <div className={aboutCss.backWord}>
@@ -57,7 +58,7 @@ function AboutSection(){
                 <HiDownload style={{ position: "relative", top: "3px" }} />
               </motion.button>
 
-              <p className={aboutCss.connect}> -- Let's Connect : </p>
+              <p className={aboutCss.connect}> - Let's Connect : </p>
 
               <div className={aboutCss.socialMedia}>
                 <SocialMedia />
@@ -65,7 +66,7 @@ function AboutSection(){
             </motion.div>
           </motion.div>
 
-          <motion.div className={aboutCss.techstack} variants={techVariant} initial="hidden" animate="visible">
+          <motion.div className={aboutCss.techstack} variants={techVariant} initial="hidden" whileInView="visible" viewport={{once: true}}>
             <div className={aboutCss.back}>
               <p>Specilalites</p>
             </div>
@@ -74,7 +75,7 @@ function AboutSection(){
             </div>
           </motion.div>
 
-          <motion.div className={aboutCss.tech} variants={parentVariant} initial="hidden" animate="visible">
+          <motion.div className={aboutCss.tech} variants={parentVariant} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.4}}>
             {techStack.map((tech, index) => (
               <motion.div key={index} className={aboutCss.stack} variants={stackVariant} whileHover={{scale: 0.9, type: "spring"}}>
                 <img src={tech.image} alt={tech.name} />

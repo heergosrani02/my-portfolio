@@ -10,7 +10,8 @@ function SocialMedia() {
         className={socialCss.socialMedia}
         variants={mainVariant}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{once: true}}
       >
         <motion.div
           className={socialCss.github}

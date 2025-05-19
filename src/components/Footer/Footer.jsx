@@ -7,7 +7,7 @@ import { childVariant, parentVariant } from "./FooterVariants";
 function Footer() {
   return (
     <>
-    <motion.div variants={parentVariant} initial="hidden" animate="visible">
+    <motion.div variants={parentVariant} initial="hidden" whileInView="visible" viewport={{once: true}}>
       <div className={footerCss.container}>
         <motion.div className={footerCss.content} variants={childVariant}>
           <div className={footerCss.name}>

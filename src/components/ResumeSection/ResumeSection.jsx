@@ -8,11 +8,12 @@ import { MdWork } from "react-icons/md";
 import { childVariant, staggerVariant, titleVariant } from "./ResumeVariants.js";
 
 function ResumeSection() {
+  const size = window.innerWidth > 600;
   return (
     <>
       <section>
         <div className={resumeCss.container}>
-          <motion.div variants={titleVariant} initial="hidden" animate="visible">
+          <motion.div variants={titleVariant} initial="hidden" whileInView="visible" viewport={{once: true}}>
 
           <div className={resumeCss.backWord}>
             <p>Resume</p>
@@ -22,9 +23,9 @@ function ResumeSection() {
           </div>
           </motion.div>
 
-          <motion.div variants={staggerVariant} initial="hidden" animate="visible">
+          <motion.div variants={staggerVariant} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.4}}>
             <motion.div className={resumeCss.title} variants={childVariant}>
-              <IoSchool size={window.innerWidth > 600 ? 43 : 30} />
+              <IoSchool size={ size ? 43 : 30} />
               <p>Education</p>
             </motion.div>
 
@@ -45,7 +46,7 @@ function ResumeSection() {
           </div>
 
           <motion.div className={resumeCss.title} variants={childVariant}>
-            <MdWork size={window.innerWidth > 600 ? 43 : 30} />
+            <MdWork size={size ? 43 : 30} />
             <p>Experience</p>
           </motion.div>
 

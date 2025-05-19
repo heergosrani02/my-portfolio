@@ -9,6 +9,9 @@ import {
 } from "./ProjectVariants.js";
 
 function ProjectSection() {
+
+  const size = window.innerWidth > 600;
+
   return (
     <>
       <section>
@@ -16,7 +19,8 @@ function ProjectSection() {
           <motion.div
             variants={parentVariant}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{once: true}}
           >
             <div className={projectCss.backWord}>
               <p>My Works</p>
@@ -30,7 +34,8 @@ function ProjectSection() {
             className={projectCss.allProjects}
             variants={staggerVariant}
             initial="hidden"
-            animate="visible"
+            whileInView="visible"
+            viewport={{ amount: 0.6, once: true}}
           >
             {projects.map((project) => (
               <motion.div
@@ -50,11 +55,11 @@ function ProjectSection() {
                   >
                     <motion.button className={projectCss.btnGit} whileTap={{scale: 0.9, duration:0.3}}>
                       Github
-                      <FaGithub style={{paddingLeft: "10px"}} size={window.innerWidth > 600 ? 20 : 16} />
+                      <FaGithub style={{paddingLeft: "10px"}} size={ size ? 23 : 16} />
                     </motion.button>
                     <motion.button className={projectCss.btnCheck} whileTap={{scale: 0.9, duration:0.3}}>
                       Check Live
-                      <FaArrowUp style={{paddingLeft: "10px"}} size={window.innerWidth > 600 ? 20 : 16} />
+                      <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size  > 600 ? 23 : 16}/>
                     </motion.button>
                   </motion.div>
                 </motion.div>
