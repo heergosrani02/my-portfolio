@@ -36,7 +36,7 @@ function HeroSection() {
           </motion.div>
 
           <div className={heroCss.heroImg}>
-            <motion.img src={person} alt="person" variants={childVariant} />
+            <motion.img src={person} alt="person" variants={childVariant} loading="lazy"/>
           </div>
 
           <motion.div className={heroCss.glass} variants={letterVariant}>

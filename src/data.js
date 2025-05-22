@@ -116,6 +116,6 @@ export const projects = [
     image: pincodeApi,
     name: "PincodeApi",
     tools: "ReactJs and Hooks",
-    description: "Developed a Post Office fetching app with a responsiv UI using ReactJs and its hooks. Integrated the Pincode API to fetch and display real-time Post Office data of a particular pincode. If a user wants to see a particular data of a post office then user can see by searching its name.",
+    description: "Developed a Post Office fetching app with a responsive UI using ReactJs and its hooks. Integrated the Pincode API to fetch and display real-time Post Office data of a particular pincode. If a user wants to see a particular data of a post office then user can see by searching its name.",
   },
 ];

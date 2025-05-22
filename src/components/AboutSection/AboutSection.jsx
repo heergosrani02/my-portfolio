@@ -3,7 +3,7 @@ import aboutCss from "./AboutSection.module.css"
 import { HiDownload } from "react-icons/hi"
 import SocialMedia from "./../../UI/SocialMedia/SocialMedia.jsx";
 
-import { motion } from "motion/react";
+import { color, motion } from "motion/react";
 
 import { techStack } from "../../data.js";
 import { parentVariant, childVariant, techVariant, stackVariant } from "./AboutVariants.js";
@@ -78,7 +78,7 @@ function AboutSection(){
           <motion.div className={aboutCss.tech} variants={parentVariant} initial="hidden" whileInView="visible" viewport={{once: true, amount: 0.4}}>
             {techStack.map((tech, index) => (
               <motion.div key={index} className={aboutCss.stack} variants={stackVariant} whileHover={{scale: 0.9, type: "spring"}}>
-                <img src={tech.image} alt={tech.name} />
+                <img src={tech.image} alt={tech.name} loading="lazy" />
                 <p>{tech.name}</p>
               </motion.div>
             ))}

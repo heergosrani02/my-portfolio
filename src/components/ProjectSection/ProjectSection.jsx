@@ -53,11 +53,11 @@ function ProjectSection() {
                     className={projectCss.btn}
                     variants={childVariant}
                   >
-                    <motion.button className={projectCss.btnGit} whileTap={{scale: 0.9, duration:0.3}}>
+                    <motion.button className={projectCss.btnGit} whileHover={{color: "#2f4156", background: "#F5EFEB", duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Github
                       <FaGithub style={{paddingLeft: "10px"}} size={ size ? 23 : 16} />
                     </motion.button>
-                    <motion.button className={projectCss.btnCheck} whileTap={{scale: 0.9, duration:0.3}}>
+                    <motion.button className={projectCss.btnCheck} whileHover={{scale: 1.05,  duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Check Live
                       <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size  > 600 ? 23 : 16}/>
                     </motion.button>

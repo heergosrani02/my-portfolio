@@ -3,7 +3,7 @@ nav{
     position: fixed;
     top: 0;
     z-index: 1;
-    background-color: #C8D9E6;
+    background-color: #2F4156;
 }
 
 .nav{
@@ -47,6 +47,7 @@ nav{
     left: 390px;
     top: 26px;
     cursor: pointer;
+    color: #2F4156;
 }
 
 .navContainer ul{

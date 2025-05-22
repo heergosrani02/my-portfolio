@@ -21,9 +21,9 @@
 }
 
 :root{
-    --bg-color: #C8D9E6;
-    --secondary-color: #F5EFEB;
-    --text-color: #2F4156;
+    --bg-color: #2F4156;
+    --secondary-color: #C8D9E6;
+    --text-color: #F5EFEB;
 }
 
 body{

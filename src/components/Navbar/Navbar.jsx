@@ -46,6 +46,7 @@ function Navbar() {
                 variants={menuVariant}
                 initial="hidden"
                 animate="visible"
+                viewport={{once: true}}
               >
                 <CgMenuRightAlt size={32} onClick={handleMenu} />
               </motion.div>
@@ -60,7 +61,7 @@ function Navbar() {
                 animate="visible"
                 exit="exit"
               >
-                <motion.div variants={menuVariant}>
+                <motion.div variants={menuVariant} viewport={{once: true}}>
                 <RxCross2
                   size={32}
                   onClick={handleMenu}

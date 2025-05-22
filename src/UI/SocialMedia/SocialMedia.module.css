@@ -1,8 +1,16 @@
 .socialMedia{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     position: relative;
     top: 70px;
     cursor: pointer;
+    color: #2f4156;
+}
+
+.github, .twitter, .linkedin, .instagram{
+    background: #F5EFEB;
+    padding: 4px;
+    border-radius: 5px;
 }
