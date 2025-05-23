@@ -6,6 +6,7 @@
     font-family: "Cascadia Mono", sans-serif;
     text-decoration: none;
     list-style: none;
+    cursor: none;
 }
 
 ::-webkit-scrollbar {

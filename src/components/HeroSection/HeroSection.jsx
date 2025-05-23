@@ -6,6 +6,8 @@ import { HiDownload } from "react-icons/hi";
 
 import { containerVariant, childVariant, letterVariant } from "./HeroVariants";
 
+import Cursor from "./../../UI/Cursor/Cursor.jsx"
+
 function HeroSection() {
   const letter =
     "- I'm creative developer, and designer based in India, and I'm very passionate and dedicated to my work.";
@@ -13,6 +15,9 @@ function HeroSection() {
   return (
     <>
       <section>
+
+        {window.innerWidth > 1020 ? <Cursor /> : " "}
+
         <motion.div
           className={heroCss.container}
           variants={containerVariant}

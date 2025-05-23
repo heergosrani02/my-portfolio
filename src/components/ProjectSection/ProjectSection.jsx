@@ -59,7 +59,7 @@ function ProjectSection() {
                     </motion.button>
                     <motion.button className={projectCss.btnCheck} whileHover={{scale: 1.05,  duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Check Live
-                      <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size  > 600 ? 23 : 16}/>
+                      <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size ? 23 : 16}/>
                     </motion.button>
                   </motion.div>
                 </motion.div>

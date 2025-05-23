@@ -29,7 +29,6 @@ nav{
     position: absolute;
     top: 26px;
     right: 30px;
-    cursor: pointer;
 }
 
 .navContainer{
@@ -46,7 +45,6 @@ nav{
     position: relative;
     left: 390px;
     top: 26px;
-    cursor: pointer;
     color: #2F4156;
 }
 
@@ -61,7 +59,6 @@ nav{
     padding: 10px;
     font-size: 35px;
     color: #2F4156;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {

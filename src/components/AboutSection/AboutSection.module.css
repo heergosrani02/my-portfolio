@@ -70,7 +70,6 @@
     position: relative;
     top: 30px;
     left: 40px;
-    cursor: pointer;
 }
 
 .connect {
@@ -89,7 +88,6 @@
     position: relative;
     top: -104px;
     left: 540px;
-    cursor: pointer;
 }
 
 .techstack {
@@ -133,10 +131,9 @@
     align-items: center;
     font-size: 15px;
     font-weight: 700;
-    background: #f5efeb63;
+    background: #f5efeb6e;
     border: 1px solid #F5EFEB;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 .stack img {
