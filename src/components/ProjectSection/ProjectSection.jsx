@@ -1,6 +1,9 @@
 import projectCss from "./ProjectSection.module.css";
 import { projects } from "./../../data.js";
+
 import { motion } from "motion/react";
+import { Element } from "react-scroll";
+
 import { FaArrowUp, FaGithub } from "react-icons/fa6";
 import {
   childVariant,
@@ -14,7 +17,7 @@ function ProjectSection() {
 
   return (
     <>
-      <section>
+      <Element name="Projects">
         <div className={projectCss.container}>
           <motion.div
             variants={parentVariant}
@@ -53,21 +56,21 @@ function ProjectSection() {
                     className={projectCss.btn}
                     variants={childVariant}
                   >
-                    <motion.button className={projectCss.btnGit} whileHover={{color: "#2f4156", background: "#F5EFEB", duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer"><motion.button className={projectCss.btnGit} whileHover={{color: "#2f4156", background: "#F5EFEB", duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Github
                       <FaGithub style={{paddingLeft: "10px"}} size={ size ? 23 : 16} />
-                    </motion.button>
-                    <motion.button className={projectCss.btnCheck} whileHover={{scale: 1.05,  duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
+                    </motion.button></a>
+                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer"><motion.button className={projectCss.btnCheck} whileHover={{scale: 1.05,  duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Check Live
                       <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size ? 23 : 16}/>
-                    </motion.button>
+                    </motion.button></a>
                   </motion.div>
                 </motion.div>
               </motion.div>
             ))}
           </motion.div>
         </div>
-      </section>
+      </Element>
     </>
   );
 }

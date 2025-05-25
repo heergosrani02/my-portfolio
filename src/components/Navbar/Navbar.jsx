@@ -15,6 +15,7 @@ import { RxCross2 } from "react-icons/rx";
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [isOpen, setOpen] = useState(false);
@@ -81,7 +82,7 @@ function Navbar() {
                       variants={itemVariant}
                       whileHover={{scale: 1.05, y:-5}}
                     >
-                      <p>{name}</p>
+                      <Link to={name} smooth="true" duration={500}>{name}</Link>
                     </motion.li>
                   ))}
                 </motion.ul>

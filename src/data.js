@@ -11,6 +11,8 @@ import github from "./assets/img/github.png";
 import postman from "./assets/img/postman.png";
 import motion from "./assets/img/motion.png";
 import accio from "./assets/img/acciojob.png";
+import hariaSchool from "./assets/img/hariaSchool.png";
+import tapovan from "./assets/img/tapovanSchool.png";
 import czmg from "./assets/img/czmg.png";
 import pu from "./assets/img/pu.png";
 import pincodeApi from "./assets/img/pincodeApi.png"
@@ -82,6 +84,24 @@ export const techStack = [
 export const education = [
   {
     id: 1,
+    image: hariaSchool,
+    date: "2017 - 2018",
+    collegeName: "Shri L.G Haria High School",
+    courseName: "S.S.C",
+    cityName: "Jamnagar, India",
+  },
+
+  {
+    id: 2,
+    image: tapovan,
+    date: "2019 - 2020",
+    collegeName: "Tapovan Vatsalyadham",
+    courseName: "H.S.C",
+    cityName: "Gadhinagar, India",
+  },
+
+  {
+    id: 3,
     image: czmg,
     date: "2020 - 2023",
     collegeName: "Smt CZMG BCA College",
@@ -90,7 +110,7 @@ export const education = [
   },
 
   {
-    id: 2,
+    id: 4,
     image: pu,
     date: "2023 - 2025",
     collegeName: "Parul University",
@@ -117,5 +137,7 @@ export const projects = [
     name: "PincodeApi",
     tools: "ReactJs and Hooks",
     description: "Developed a Post Office fetching app with a responsive UI using ReactJs and its hooks. Integrated the Pincode API to fetch and display real-time Post Office data of a particular pincode. If a user wants to see a particular data of a post office then user can see by searching its name.",
+    githubLink: "https://github.com/heergosrani02/pincodeApi",
+    liveDemo: "https://pincode-api-pearl.vercel.app/"
   },
 ];

@@ -134,7 +134,7 @@
     .allProjects {
         position: relative;
         top: 20px;
-        left: 10px;
+        left: 12px;
         height: 31rem;
     }
 
@@ -152,6 +152,7 @@
     }
 
     .details p:nth-child(1) {
+        width: 285px;
         font-size: 20px;
         font-weight: 600;
         position: relative;

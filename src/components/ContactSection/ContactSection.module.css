@@ -146,14 +146,14 @@ textarea::placeholder {
     .location {
         width: 95%;
         height: 89px;
-        margin-left: 15px;
+        margin-left: 10px;
         font-size: 17px;
     }
 
     .contactForm {
         width: 90%;
         height: 38rem;
-        margin-left: 15px;
+        margin-left: 10tpx;
     }
 
     .contactForm p {

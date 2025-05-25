@@ -2,6 +2,7 @@ import resumeCss from "./ResumeSection.module.css";
 import { education, experience } from "./../../data.js";
 
 import { motion } from "motion/react"
+import { Element } from "react-scroll";
 
 import { IoSchool } from "react-icons/io5";
 import { MdWork } from "react-icons/md";
@@ -11,7 +12,7 @@ function ResumeSection() {
   const size = window.innerWidth > 600;
   return (
     <>
-      <section>
+      <Element name="Resume">
         <div className={resumeCss.container}>
           <motion.div variants={titleVariant} initial="hidden" whileInView="visible" viewport={{once: true}}>
 
@@ -67,7 +68,7 @@ function ResumeSection() {
           </div>
           </motion.div>
         </div>
-      </section>
+      </Element>
     </>
   );
 }

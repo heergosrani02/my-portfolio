@@ -156,7 +156,7 @@
         height: 420px;
         position: absolute;
         top: 280px;
-        left: 10px;
+        left: -20px;
     }
 
     .glass {
@@ -263,7 +263,7 @@
         width: 46%;
         height: 420px;
         position: relative;
-        top: 180px;
+        top: 165px;
         left: -5px;
     }
 
@@ -329,7 +329,7 @@
         font-size: 17px;
         position: relative;
         top: 141px;
-        left: 700px;
+        left: 759px;
     }
 
     .downloadCv {
@@ -338,6 +338,6 @@
         font-size: 16px;
         position: relative;
         top: 151px;
-        left: 810px;
+        left: 856px;
     }
 } 
