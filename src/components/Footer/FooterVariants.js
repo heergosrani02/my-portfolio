@@ -23,3 +23,14 @@ export const childVariant = {
     },
   },
 };
+
+export const marqueeVariant = {
+  visible: {
+    x: ["0%", "-50%"],
+    transition: {
+      duration: 20,
+      repeat: Infinity,
+      ease: "linear",
+    },
+  },
+};

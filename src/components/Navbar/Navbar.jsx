@@ -35,7 +35,7 @@ function Navbar() {
               initial="hidden"
               animate="visible"
             >
-              <p>HG.</p>
+              <p>Heer Gosrani</p>
             </motion.div>
           </div>
 
