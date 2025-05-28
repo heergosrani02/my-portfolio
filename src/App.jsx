@@ -12,11 +12,12 @@ const ContactSection = lazy(() => import('./components/ContactSection/ContactSec
 
 function App() {
 
-  const rightClick = (e) => {
-    e.preventDefault();
-  }
-
   useEffect(() => {
+    
+    const rightClick = (e) => {
+      e.preventDefault();
+    }
+
     document.addEventListener("contextmenu", rightClick);
   }, [])
 
