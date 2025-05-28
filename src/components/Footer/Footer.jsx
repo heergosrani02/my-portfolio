@@ -1,8 +1,8 @@
 import footerCss from "./Footer.module.css";
-import SocialMedia from "../../UI/SocialMedia/SocialMedia";
+import SocialMedia from "../../UI/SocialMedia/SocialMedia.jsx";
 
 import { motion } from "motion/react" ;
-import { childVariant, marqueeVariant, parentVariant } from "./FooterVariants";
+import { childVariant, marqueeVariant, parentVariant } from "./FooterVariants.js";
 
 function Footer() {
 
@@ -29,7 +29,7 @@ function Footer() {
         </div>
 
         <div className={footerCss.rightsReserved}>
-          <motion.div className={footerCss.track} variants={marqueeVariant} animate="visble">
+          <motion.div className={footerCss.track} variants={marqueeVariant} animate="visible">
             <span> {text} * {text} * {text} * {text} * </span>
             <span> {text} * {text} * {text} * {text} * </span>
           </motion.div>

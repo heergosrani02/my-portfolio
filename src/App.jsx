@@ -1,5 +1,5 @@
 import './App.css'
-import { Suspense, lazy } from 'react'
+import { Suspense, lazy, useEffect } from 'react'
 
 import Navbar from "./components/Navbar/Navbar.jsx"
 import HeroSection from './components/HeroSection/HeroSection.jsx'
@@ -11,6 +11,14 @@ const ProjectSection = lazy(() => import('./components/ProjectSection/ProjectSec
 const ContactSection = lazy(() => import('./components/ContactSection/ContactSection.jsx'));
 
 function App() {
+
+  const rightClick = (e) => {
+    e.preventDefault();
+  }
+
+  useEffect(() => {
+    document.addEventListener("contextmenu", rightClick);
+  }, [])
 
   return (
     <>
