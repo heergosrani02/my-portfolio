@@ -38,7 +38,7 @@ function ProjectSection() {
             variants={staggerVariant}
             initial="hidden"
             whileInView="visible"
-            viewport={{ amount: 0.6, once: true}}
+            viewport={{ amount: 0.1, once: true}}
           >
             {projects.map((project) => (
               <motion.div
@@ -58,11 +58,11 @@ function ProjectSection() {
                   >
                     <a href={project.githubLink} target="_blank" rel="noopener noreferrer"><motion.button className={projectCss.btnGit} whileHover={{color: "#2f4156", background: "#F5EFEB", duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Github
-                      <FaGithub style={{paddingLeft: "10px"}} size={ size ? 23 : 16} />
+                      <FaGithub style={{paddingLeft: "10px"}} size={ size ? 20 : 14} />
                     </motion.button></a>
                     <a href={project.liveDemo} target="_blank" rel="noopener noreferrer"><motion.button className={projectCss.btnCheck} whileHover={{scale: 1.05,  duration: 0.5}} whileTap={{scale: 0.9, duration:0.3}}>
                       Check Live
-                      <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size ? 23 : 16}/>
+                      <FaArrowUp style={{paddingLeft: "10px", rotate: "39deg"}} size={ size ? 20 : 14}/>
                     </motion.button></a>
                   </motion.div>
                 </motion.div>

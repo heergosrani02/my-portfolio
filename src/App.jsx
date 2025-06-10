@@ -3,11 +3,11 @@ import { Suspense, lazy, useEffect } from 'react'
 
 import Navbar from "./components/Navbar/Navbar.jsx"
 import HeroSection from './components/HeroSection/HeroSection.jsx'
+import ProjectSection from './components/ProjectSection/ProjectSection.jsx'
 import Footer from "./components/Footer/Footer.jsx"
 
 const AboutSection = lazy(() => import('./components/AboutSection/AboutSection.jsx'));
 const ResumeSection = lazy(() => import('./components/ResumeSection/ResumeSection.jsx'));
-const ProjectSection = lazy(() => import('./components/ProjectSection/ProjectSection.jsx'));
 const ContactSection = lazy(() => import('./components/ContactSection/ContactSection.jsx'));
 
 function App() {
@@ -31,9 +31,7 @@ function App() {
       <Suspense>
         <ResumeSection />
       </Suspense>
-      <Suspense>
-        <ProjectSection />
-      </Suspense>
+      <ProjectSection />
       <Suspense>
         <ContactSection />
       </Suspense>
