@@ -2,9 +2,8 @@ import html5 from "./assets/img/html.png";
 import css3 from "./assets/img/css3.png";
 import javascript from "./assets/img/javascript.png";
 import reactjs from "./assets/img/reactJs.png";
-import nodejs from "./assets/img/nodejs.png";
 import redux from "./assets/img/redux.png";
-import bootstrap from "./assets/img/bootstrap.png";
+import tailwindCss from "./assets/img/tailwindCss.png";
 import java from "./assets/img/java.png";
 import git from "./assets/img/git.png";
 import github from "./assets/img/github.png";
@@ -15,7 +14,9 @@ import hariaSchool from "./assets/img/hariaSchool.png";
 import tapovan from "./assets/img/tapovanSchool.png";
 import czmg from "./assets/img/czmg.png";
 import pu from "./assets/img/pu.png";
-import pincodeApi from "./assets/img/pincodeApi.png"
+import pincodeApi from "./assets/img/pincodeApi.png";
+import googleExcelClone from "./assets/img/googleExcelClone.png";
+import youtubeClone from "./assets/img/youtubeClone.png";
 
 export const links = ["Home", "About", "Resume", "Projects", "Contact"];
 
@@ -46,13 +47,8 @@ export const techStack = [
   },
 
   {
-    name: "NodeJs",
-    image: nodejs,
-  },
-
-  {
-    name: "Bootstrap",
-    image: bootstrap,
+    name: "TailwindCss",
+    image: tailwindCss,
   },
 
   {
@@ -133,12 +129,32 @@ export const experience = [
 export const projects = [
   {
     id: 1,
+    image: googleExcelClone,
+    name: "Google Excel Clone",
+    tools: "HTML5, CSS3 and Javascript",
+    description: "Developed a web-based spreadsheet application inspired by Google Sheets and Integrated the some of its feature like Cell formating, Text Decoration, Real-time updates and Text Alignment etc.",
+    githubLink: "https://github.com/heergosrani02/google-excel-clone",
+    liveDemo: "https://google-excel-clone.vercel.app/",
+  },
+
+  {
+    id: 2,
     image: pincodeApi,
     name: "PincodeApi",
     tools: "ReactJs and Hooks",
     description: "Developed a Post Office fetching app with a responsive UI using ReactJs and its hooks. Integrated the Pincode API to fetch and display real-time Post Office data of a particular pincode. If a user wants to see a particular data of a post office then user can see by searching its name.",
     githubLink: "https://github.com/heergosrani02/pincodeApi",
     liveDemo: "https://pincode-api-pearl.vercel.app/"
+  },
+
+  {
+    id: 3,
+    image: youtubeClone,
+    name: "Youtube Clone",
+    tools: "ReactJs and Hooks",
+    description: "Developed a youtube clone using youtube data v3 api and integrated it in this app.",
+    githubLink: "https://github.com/heergosrani02/youtube-clone",
+    liveDemo: "https://youtube-clone-mu-sable.vercel.app/",
   },
 ];
 

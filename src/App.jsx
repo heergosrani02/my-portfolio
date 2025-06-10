@@ -12,14 +12,14 @@ const ContactSection = lazy(() => import('./components/ContactSection/ContactSec
 
 function App() {
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    const rightClick = (e) => {
-      e.preventDefault();
-    }
+  //   const rightClick = (e) => {
+  //     e.preventDefault();
+  //   }
 
-    document.addEventListener("contextmenu", rightClick);
-  }, [])
+  //   document.addEventListener("contextmenu", rightClick);
+  // }, [])
 
   return (
     <>

@@ -13,7 +13,7 @@ import Cursor from "./../../UI/Cursor/Cursor.jsx";
 
 function HeroSection() {
   const letter =
-    "- I'm creative developer, and designer based in India, and I'm very passionate and dedicated to my work.";
+    "- I'm creative developer based in India, and I'm very passionate and dedicated to my work.";
 
   return (
     <>
@@ -38,7 +38,7 @@ function HeroSection() {
 
           <motion.div className={heroCss.myRole} variants={childVariant}>
             <p>
-              a <span>Software</span> Developer.
+              a <span>Frontend</span> Developer.
             </p>
           </motion.div>
 

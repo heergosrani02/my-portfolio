@@ -34,7 +34,7 @@ function AboutSection(){
             <motion.div className={aboutCss.intro} variants={childVariant}>
               <p>
                 - Hi, I'm <span> Heer Gosrani</span>, a passionate and
-                self-driven <span> MERN Stack Developer</span>. I specialize in
+                self-driven <span> Frontend Developer</span>. I specialize in
                 creating full-stack web applications that are fast, scalable,
                 and user-friendly. My journey into web development began with a
                 strong curiosity about how digital products work — and it
@@ -44,10 +44,9 @@ function AboutSection(){
 
             <motion.div className={aboutCss.info} variants={childVariant}>
               <p>
-                - Currently, I'm focused on mastering{" "}
-                <span> API integrations</span> in React and exploring ways to
-                optimize app performance and user experience. I believe in
-                writing clean, efficient code and love turning ideas into
+                - Currently, I'm focused on mastering <span>API integrations</span> in 
+                React and exploring ways to optimize app performance and user experience. 
+                I believe in writing clean, efficient code and love turning ideas into
                 working products that people can actually use.
               </p>
             </motion.div>
