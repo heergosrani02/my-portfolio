@@ -16,7 +16,7 @@ import czmg from "./assets/img/czmg.png";
 import pu from "./assets/img/pu.png";
 import pincodeApi from "./assets/img/pincodeApi.png";
 import googleExcelClone from "./assets/img/googleExcelClone.png";
-import youtubeClone from "./assets/img/youtubeClone.png";
+import youtubeClone from "./assets/img/YoutubeClone.png";
 
 export const links = ["Home", "About", "Resume", "Projects", "Contact"];
 
