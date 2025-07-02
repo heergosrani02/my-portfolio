@@ -4,7 +4,7 @@ import { Element } from "react-scroll";
 
 import resumeCv from "./../../assets/Heer_Gosrani_SDE.pdf";
 
-import person from "./../../assets/img/heer.png";
+import person from "./../../assets/img/Heer.png";
 import { HiDownload } from "react-icons/hi";
 
 import { containerVariant, childVariant, letterVariant } from "./HeroVariants";
