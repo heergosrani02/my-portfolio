@@ -49,8 +49,8 @@
     border-radius: 10px;
     border: 1px solid #F5EFEB;
     position: relative;
-    top: 90px;
-    left: 930px;
+    top: 94px;
+    left: 82%;
     backdrop-filter: blur(10px);
 }
 
@@ -62,7 +62,7 @@
     text-underline-offset: 8px;
     position: relative;
     top: 95px;
-    left: 1030px;
+    left: 91%;
 }
 
 .down {
@@ -320,7 +320,7 @@
         height: 620px;
         position: absolute;
         top: 100px;
-        right: 160px;
+        right: 170px;
     }
 
     .glass {
@@ -329,7 +329,7 @@
         font-size: 17px;
         position: relative;
         top: 141px;
-        left: 759px;
+        left: 72%;
     }
 
     .downloadCv {
@@ -338,6 +338,6 @@
         font-size: 16px;
         position: relative;
         top: 151px;
-        left: 856px;
+        left: 83%;
     }
 } 
